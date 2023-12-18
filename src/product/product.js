@@ -204,6 +204,24 @@ for (productName in productsTypes) {
               //   );
 
               // check if item is already in the cart
+              //   let obj = {
+              //     id: productSubTypes[radioValue].priceAndSize[lastproduct].id,
+              //     size: productSubTypes[radioValue].priceAndSize[lastproduct]
+              //       .size,
+              //   };
+
+              console.log({
+                id: productSubTypes[radioValue].priceAndSize[lastproduct].id,
+                size: productSubTypes[radioValue].priceAndSize[lastproduct]
+                  .size,
+                price:
+                  productSubTypes[radioValue].priceAndSize[lastproduct].price,
+                cups: productSubTypes[radioValue].priceAndSize[lastproduct]
+                  .cups,
+                pics: productsTypes[productName].pics,
+                name: productName + " " + radioValue + " " + lastproduct,
+              });
+
               let cartItems = localStorage.getItem("productsInCart")
                 ? JSON.parse(localStorage.getItem("productsInCart"))
                 : [];
@@ -221,9 +239,19 @@ for (productName in productsTypes) {
 
               if (!itemExist) {
                 // push the chosen product to the array
-                cartItems.push(
-                  productSubTypes[radioValue].priceAndSize[lastproduct]
-                );
+                cartItems.push({
+                  id: productSubTypes[radioValue].priceAndSize[lastproduct].id,
+                  size: productSubTypes[radioValue].priceAndSize[lastproduct]
+                    .size,
+                  price:
+                    productSubTypes[radioValue].priceAndSize[lastproduct].price,
+                  cups: productSubTypes[radioValue].priceAndSize[lastproduct]
+                    .cups,
+                  pics: productsTypes[productName].pics,
+                  name: productName + " " + radioValue + " " + lastproduct,
+                  chosnNumber: 1,
+                });
+                // console.log(cartItems);
 
                 // save the array to local storage
                 localStorage.setItem(
