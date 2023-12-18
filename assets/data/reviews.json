@@ -1,0 +1,67 @@
+[
+    {
+        "id": 74257232856,
+        "name": "Eman Hamed",
+        "email": "sj@example.com",
+        "balance": "350",
+        "bgImage": "https://example.com/background1.jpg",
+        "avatarImage": "https://i.pinimg.com/564x/03/77/60/037760c7266a69a282043e9546e431e5.jpg",
+        "websiteReview": {
+            "simpleReview": "excellent service",
+            "star": 5,
+            "review": "The customer service and product quality are unmatched. Highly recommended!"
+        }
+    },
+    {
+        "id": 74257232857,
+        "name": "Yousab Emad",
+        "email": "jd@example.com",
+        "balance": "275",
+        "bgImage": "https://example.com/background2.jpg",
+        "avatarImage": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702771200&semt=sph",
+        "websiteReview": {
+            "simpleReview": "satisfactory",
+            "star": 3.5,
+            "review": "Decent experience, but there's room for improvement in delivery times."
+        }
+    },
+    {
+        "id": 74257232858,
+        "name": "Ahmed Zena",
+        "email": "az@example.com",
+        "balance": "420",
+        "bgImage": "https://example.com/background3.jpg",
+        "avatarImage": "https://images.ctfassets.net/u4vv676b8z52/4G4owhqMZy1AmBt2R0ddfZ/2a49745e0f2404bcb5e3df010c94e57e/diamond-face-rectangle-glasses-660x440-compressor.jpg?fm=jpg&q=80",
+        "websiteReview": {
+            "simpleReview": "very good",
+            "star": 4,
+            "review": "Great variety of products and easy navigation. Will shop here again."
+        }
+    },
+    {
+        "id": 74257232859,
+        "name": "Mohamed Abd-Elhameed",
+        "email": "os@example.com",
+        "balance": "300",
+        "bgImage": "https://example.com/background4.jpg",
+        "avatarImage": "https://www.spring.org.uk/images/man-21.jpg",
+        "websiteReview": {
+            "simpleReview": "not impressed",
+            "star": 4,
+            "review": "Found the website layout confusing and the prices a bit high."
+        }
+    },
+    {
+        "id": 74257232860,
+        "name": "Medhat Mamdouh",
+        "email": "lj@example.com",
+        "balance": "385",
+        "bgImage": "https://example.com/background5.jpg",
+        "avatarImage": "https://menshaircuts.com/wp-content/uploads/2023/07/face-shapes-men-jake-gyllenhaal.jpg",
+        "websiteReview": {
+            "simpleReview": "outstanding",
+            "star": 5,
+            "review": "Exceptional quality and fast shipping. My go-to place for gifts."
+        }
+    }
+]

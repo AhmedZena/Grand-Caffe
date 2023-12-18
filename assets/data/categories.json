@@ -8,8 +8,9 @@
                 "pics": [
                     "https://seelaz.com/cdn/shop/products/frenchcoffeCoffe125.png?v=1668458737&width=713",
                     "https://seelaz.com/cdn/shop/products/Franchcoffee.png?v=1668458740&width=713",
-                    "https://seelaz.com/cdn/shop/products/Franchcoffee.png?v=1668458740&width=713"
+                    "https://seelaz.com/cdn/shop/products/FrenchCoffee.png?v=1668458747&width=713"
                 ],
+                "shareLink": "https://seelaz.com/products/french-coffee",
                 "sub-types": {
                     "light": {
                         "id": "c1t1v1",
@@ -173,6 +174,7 @@
                     "https://www.zicaffe.com/shop/329/black-of-italy-and-cups-pack.jpg",
                     "https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/1682501-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MzU4Nzh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzNZeTlvWlRJdmFEQXdMemt6TlRnMk1EUXpNRFEwTVRRdWFuQm58MjQzODk5ZWI2NmI1Y2UzMjhiMjEyMmIwODliODdlMzZiOGE2OTRiN2Q3NzQ3OWQ4ZDEyYmU0NzQyNjQ4MDIzMg"
                 ],
+                "shareLink": "https://seelaz.com/products/italian-coffee",
                 "sub-types": {
                     "espresso": {
                         "id": "c1t2v1",
@@ -336,6 +338,7 @@
                     "https://m.media-amazon.com/images/I/41tTkFG+dgL._AC_UF894,1000_QL80_.jpg",
                     "https://m.media-amazon.com/images/I/41tTkFG+dgL._AC_UF894,1000_QL80_.jpg"
                 ],
+                "shareLink": "https://seelaz.com/products/american-coffee",
                 "sub-types": {
                     "classic": {
                         "id": "c1t3v1",
@@ -499,6 +502,7 @@
                     "https://i5.walmartimages.com/seo/Starbucks-Via-Colombia-Instant-Coffee-Packets-Medium-Roast-100-Arabica-8-Count_e321b7fe-b482-47a0-9150-ae3cae08d4e9.75bbbbf21ab985eb9b97cc4bc2788d65.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
                     "https://m.media-amazon.com/images/I/71tf-K3kmwL._AC_UF1000,1000_QL80_.jpg"
                 ],
+                "shareLink": "https://seelaz.com/products/colombian-coffee",
                 "sub-types": {
                     "supremo": {
                         "id": "c1t4v1",
@@ -662,6 +666,7 @@
                     "https://coffeebeansshop.com.au/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Ethiopia-coffee-beans-online.png",
                     "https://www.tucanocoffee.com/wp-content/uploads/2020/04/3-1.jpg"
                 ],
+                "shareLink": "https://seelaz.com/products/ethiopian-coffee",
                 "sub-types": {
                     "yirgacheffe": {
                         "id": "c1t5v1",
@@ -825,6 +830,7 @@
                     "https://seelaz.com/cdn/shop/products/TurkishCoffee.png?v=1669145044&width=713",
                     "https://seelaz.com/cdn/shop/products/turkishCoffe125.png?v=1669145044&width=713"
                 ],
+                "shareLink": "https://seelaz.com/products/turkish-coffee",
                 "sub-types": {
                     "light": {
                         "id": "c1t6v1",
