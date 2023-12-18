@@ -184,24 +184,53 @@ for (productName in productsTypes) {
                 productSubTypes[radioValue].priceAndSize[lastproduct]
               );
 
-              // get from local storage
-              let chosenProducts = localStorage.getItem("chosenProducts")
-                ? JSON.parse(localStorage.getItem("chosenProducts"))
+              //   // get from local storage
+              //   let chosenProducts = localStorage.getItem("chosenProducts")
+              //     ? JSON.parse(localStorage.getItem("chosenProducts"))
+              //     : [];
+
+              //   console.log(chosenProducts);
+
+              //   // push the chosen product to the array
+              //   chosenProducts.push(
+              //     productSubTypes[radioValue].priceAndSize[lastproduct]
+              //   );
+
+              //   console.log(chosenProducts);
+              //   // save the array to local storage
+              //   localStorage.setItem(
+              //     "chosenProducts",
+              //     JSON.stringify(chosenProducts)
+              //   );
+
+              // check if item is already in the cart
+              let cartItems = localStorage.getItem("productsInCart")
+                ? JSON.parse(localStorage.getItem("productsInCart"))
                 : [];
 
-              console.log(chosenProducts);
+              let itemExist = false;
+              for (let i = 0; i < cartItems.length; i++) {
+                if (
+                  cartItems[i].id ==
+                  productSubTypes[radioValue].priceAndSize[lastproduct].id
+                ) {
+                  itemExist = true;
+                  break;
+                }
+              }
 
-              // push the chosen product to the array
-              chosenProducts.push(
-                productSubTypes[radioValue].priceAndSize[lastproduct]
-              );
+              if (!itemExist) {
+                // push the chosen product to the array
+                cartItems.push(
+                  productSubTypes[radioValue].priceAndSize[lastproduct]
+                );
 
-              console.log(chosenProducts);
-              // save the array to local storage
-              localStorage.setItem(
-                "chosenProducts",
-                JSON.stringify(chosenProducts)
-              );
+                // save the array to local storage
+                localStorage.setItem(
+                  "productsInCart",
+                  JSON.stringify(cartItems)
+                );
+              }
             }
           }
         });
