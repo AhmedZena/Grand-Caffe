@@ -1,0 +1,148 @@
+{
+    "offers": {
+        "spicy": {
+            "id": "c2t3",
+            "name": "Spicy Hot Chocolate",
+            "pics": [
+                "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/pumpkin-spice-84996.jpg",
+                "https://smartassandsass.com/cdn/shop/files/wake-me-up-before-you-cocoa-hot-packet-2023-restock-feb-food-and-drink-gifts-under-15-25-the-spice-age-smartass-sass-164_480x480.jpg?v=1690574738",
+                "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/milk-chocolate-flavor-hot-81115.png"
+            ],
+            "oldAndNewPrices": {
+                "small": {
+                    "id": "c2t3s1",
+                    "size": "125",
+                    "oldPrice": 60,
+                    "newPrice": 50,
+                    "cups": "1 cup"
+                },
+                "medium": {
+                    "id": "c2t3s2",
+                    "size": "250",
+                    "oldPrice": 100,
+                    "newPrice": 80,
+                    "cups": "2 cups"
+                },
+                "large": {
+                    "id": "c2t3s3",
+                    "size": "500",
+                    "oldPrice": 180,
+                    "newPrice": 150,
+                    "cups": "4 cups"
+                }
+            }
+        },
+        "classic": {
+            "id": "c2t1",
+            "name": "Classic Hot Chocolate",
+            "pics": [
+                "https://www.ubuy.com.eg/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY29tLnNhLzYzNjlmMWUzMGI2YzY3M2VkMjM2NTc4NC1uZXN0bGUtaG90LWNvY29hLW1peC1yaWNoLW1pbGstY2hvY29sYXRlLmpwZw.jpg",
+                "https://cdn0.woolworths.media/content/wowproductimages/large/046127.jpg",
+                "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/milk-chocolate-flavor-hot-81115.png"
+            ],
+            "oldAndNewPrices": {
+                "small": {
+                    "id": "c2t1s1",
+                    "size": "125",
+                    "oldPrice": 50,
+                    "newPrice": 40,
+                    "cups": "1 cup"
+                },
+                "medium": {
+                    "id": "c2t1s2",
+                    "size": "250",
+                    "oldPrice": 90,
+                    "newPrice": 70,
+                    "cups": "2 cups"
+                },
+                "large": {
+                    "id": "c2t1s3",
+                    "size": "500",
+                    "oldPrice": 160,
+                    "newPrice": 130,
+                    "cups": "4 cups"
+                }
+            }
+        },
+        "dark": {
+            "id": "c1t6v3",
+            "name": "Turkish Coffee Dark",
+            "description": "A light and refreshing coffee with a hint of cardamom",
+            "pics": [
+                "https://www.tucanocoffee.com/wp-content/uploads/2020/04/3-1.jpg",
+                "https://seelaz.com/cdn/shop/products/TurkishCoffee.png?v=1669145044&width=713",
+                "https://seelaz.com/cdn/shop/products/turkishCoffe125.png?v=1669145044&width=713"
+            ],
+            "stars": 5,
+            "oldAndNewPrices": {
+                "small": {
+                    "id": "c1t6v3s1",
+                    "size": "125",
+                    "oldPrice": 120,
+                    "newPrice": 100,
+                    "cups": "6 cups"
+                },
+                "medium": {
+                    "id": "c1t6v3s2",
+                    "size": "250",
+                    "oldPrice": 200,
+                    "newPrice": 170,
+                    "cups": "12 cups"
+                },
+                "large": {
+                    "id": "c1t6v3s3",
+                    "size": "500",
+                    "oldPrice": 380,
+                    "newPrice": 320,
+                    "cups": "24 cups"
+                }
+            }
+        },
+        "limu": {
+            "id": "c1t5v3",
+            "name": "Ethiopian Limu",
+            "description": "Exotic and aromatic coffee with floral and fruity notes",
+            "pics": [
+                "https://m.media-amazon.com/images/I/61Pmkw0GjXL.jpg",
+                "https://coffeebeansshop.com.au/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Ethiopia-coffee-beans-online.png",
+                "https://www.tucanocoffee.com/wp-content/uploads/2020/04/3-1.jpg"
+            ],
+            "stars": 3.5,
+            "reviews": [
+                {
+                    "id": "c1t5v3r1",
+                    "name": "Jacob",
+                    "review": "A burst of flavors, absolutely amazing."
+                },
+                {
+                    "id": "c1t5v3r2",
+                    "name": "Zoe",
+                    "review": "Delicate and delightful."
+                }
+            ],
+            "oldAndNewPrices": {
+                "small": {
+                    "id": "c1t5v3s1",
+                    "size": "125",
+                    "oldPrice": 100,
+                    "newPrice": 80,
+                    "cups": "6 cups"
+                },
+                "medium": {
+                    "id": "c1t5v3s2",
+                    "size": "250",
+                    "oldPrice": 180,
+                    "newPrice": 140,
+                    "cups": "12 cups"
+                },
+                "large": {
+                    "id": "c1t5v3s3",
+                    "size": "500",
+                    "oldPrice": 340,
+                    "newPrice": 260,
+                    "cups": "24 cups"
+                }
+            }
+        }
+    }
+}

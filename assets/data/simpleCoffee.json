@@ -1,0 +1,38 @@
+[
+    {
+        "id": "c1t1",
+        "name": "french",
+        "price": 50,
+        "images": "https://seelaz.com/cdn/shop/products/frenchcoffeCoffe125.png?v=1668458737&width=713"
+    },
+    {
+        "id": "c1t2",
+        "name": "italian",
+        "price": 30,
+        "images": "https://m.media-amazon.com/images/I/81335EGi5EL._SL1500_.jpg"
+    },
+    {
+        "id": "c1t3",
+        "name": "american",
+        "price": 40,
+        "images": "https://seelaz.com/cdn/shop/products/amrican125.png?v=1689685074&width=493"
+    },
+    {
+        "id": "c1t4",
+        "name": "colombian",
+        "price": 50,
+        "images": "https://i5.walmartimages.com/seo/Starbucks-Via-Colombia-Instant-Coffee-Packets-Medium-Roast-100-Arabica-8-Count_e321b7fe-b482-47a0-9150-ae3cae08d4e9.75bbbbf21ab985eb9b97cc4bc2788d65.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+        "id": "c1t5",
+        "name": "Ethiopian",
+        "price": 70,
+        "images": "https://seelaz.com/cdn/shop/products/HazeknutCoffe125.png?v=1668458769&width=493"
+    },
+    {
+        "id": "c1t6",
+        "name": "turkish",
+        "price": 90,
+        "images": "https://seelaz.com/cdn/shop/products/TurkishCoffee.png?v=1669145044&width=713"
+    }
+]

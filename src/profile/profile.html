@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>profile</title>
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    </head>
+
+    <body>
+        <div class="content-profile-page">
+            <div class="profile-user-page card">
+                <div class="img-user-profile">
+                    <img class="profile-bgHome"
+                        src="https://37.media.tumblr.com/88cbce9265c55a70a753beb0d6ecc2cd/tumblr_n8gxzn78qH1st5lhmo1_1280.jpg" />
+                    <img class="avatar" src="http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200"
+                        alt="jofpin" />
+                </div>
+                <button class="btn-log-out"
+                    onclick="localStorage.removeItem('logedUserId'); window.location.href = '../../index.html'"
+                    type="button">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout</button>
+
+
+                <div class="user-profile-data">
+                    <h1 class="user-name">
+
+                        Jose Pino
+                    </h1>
+                    <p class="user-email">@jofpin</p>
+                </div>
+
+                <div class="user-balance">
+
+                    <p><i class="fas fa-wallet"></i>
+                        Balance:
+                        <span class="user-balance-span">0</span>
+                    </p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="edit-buttons">
+            <button class="edit-profile-btn" onclick="showEditForm()">Edit
+                profile</button>
+
+            <button class="edit-userBalance-btn" onclick="showBalanceForm()">Edit
+                userBalance</button>
+        </div>
+
+
+        <form onsubmit="editUser(event)" class="edit-profile">
+
+            <div class="user-info">
+                <label for="formName">
+                    <i class="fas fa-user"></i>
+                    Name: </label>
+                <input type="text" name="name" id="formName" placeholder="name">
+            </div>
+
+            <div class="user-info">
+                <label for="formEmail"> <i class="fas fa-envelope"></i>Email: </label>
+                <input type="email" name="email" id="formEmail" placeholder="email">
+            </div>
+
+            <div class="user-info">
+                <label for="formPassword"> <i class="fas fa-lock"></i>Password: </label>
+                <input type="password" name="password" id="formPassword" placeholder="password">
+            </div>
+
+            <div class="user-info">
+                <label for="formBgImage"> <i class="fas fa-image"></i>Bg Image: </label>
+                <input type="url" name="bgImage" id="formBgImage" placeholder="bg image url">
+            </div>
+
+            <div class="user-info">
+                <label for="formAvatarImage"> <i class="fas fa-image"></i>Avatar Image: </label>
+                <input type="url" name="avatarImage" id="formAvatarImage" placeholder="avatar image url">
+            </div>
+
+
+            <input type="submit" value="save">
+
+        </form>
+
+
+
+        <form onsubmit="editUserBalance(event)" class="edit-userBalance">
+
+            <div class="user-info">
+                <label for="formBalance">
+                    <i class="fas fa-wallet"></i>
+                    Balance: </label>
+                <input type="number" name="balance" id="formBalance" placeholder="balance" min="0">
+            </div>
+
+            <input type="submit" value="save">
+        </form>
+
+
+        <script src="profile.js"></script>
+
+    </body>
+
+
+
+
+</html>

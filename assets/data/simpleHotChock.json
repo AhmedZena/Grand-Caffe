@@ -1,0 +1,33 @@
+[
+    {
+        "id": "c2t1",
+        "name":"classic",
+        "price":50,
+        "images":"https://seelaz.com/cdn/shop/products/1.png?v=1668458755&width=493"
+    },
+    {
+        "id": "c2t2",
+        "name":"Mulberry",
+        "price":30,
+        "images":"https://seelaz.com/cdn/shop/products/4.png?v=1668458758&width=493"
+    },
+    {
+        "id": "c2t3",
+        "name":"Strawberry",
+        "price":40,
+        "images":"https://seelaz.com/cdn/shop/products/3.png?v=1668458759&width=493"
+    },
+    {
+        "id": "c2t4",
+        "name":"Greek",
+        "price":50,
+        "images":"https://seelaz.com/cdn/shop/products/2.png?v=1668458757&width=493"
+    }
+]
+
+
+
+
+
+
+

@@ -1,0 +1,1124 @@
+{
+    "coffee": {
+        "id": "c1",
+        "types": {
+            "french": {
+                "id": "c1t1",
+                "10-word-description": "This is a coffee made in french so it is very good",
+                "pics": [
+                    "https://seelaz.com/cdn/shop/products/frenchcoffeCoffe125.png?v=1668458737&width=713",
+                    "https://seelaz.com/cdn/shop/products/Franchcoffee.png?v=1668458740&width=713",
+                    "https://seelaz.com/cdn/shop/products/Franchcoffee.png?v=1668458740&width=713"
+                ],
+                "sub-types": {
+                    "light": {
+                        "id": "c1t1v1",
+                        "name": "French coffee light",
+                        "description": "This is a coffee light made in french so it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t1v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c1t1v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t1v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t1v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t1v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t1v2",
+                        "name": "French coffee medium",
+                        "description": "This is a coffee medium made in french so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t1v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c1t1v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t1v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t1v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t1v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t1v3",
+                        "name": "French coffee dark",
+                        "description": "This is a coffee dark made in french so it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t1v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c1t1v3r2",
+                                "name": "Sophia",
+                                "review": "A dark coffee lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t1v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t1v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t1v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c1t1v4",
+                        "name": "French coffee extra dark",
+                        "description": "This is a coffee extra dark made in french so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t1v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c1t1v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t1v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t1v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t1v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "italian": {
+                "id": "c1t2",
+                "10-word-description": "This is a coffee made in italian so it is very good",
+                "pics": [
+                    "https://m.media-amazon.com/images/I/81335EGi5EL._SL1500_.jpg",
+                    "https://www.zicaffe.com/shop/329/black-of-italy-and-cups-pack.jpg",
+                    "https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/1682501-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MzU4Nzh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzNZeTlvWlRJdmFEQXdMemt6TlRnMk1EUXpNRFEwTVRRdWFuQm58MjQzODk5ZWI2NmI1Y2UzMjhiMjEyMmIwODliODdlMzZiOGE2OTRiN2Q3NzQ3OWQ4ZDEyYmU0NzQyNjQ4MDIzMg"
+                ],
+                "sub-types": {
+                    "espresso": {
+                        "id": "c1t2v1",
+                        "name": "Italian Espresso",
+                        "description": "Rich and creamy espresso from Italy",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t2v1r1",
+                                "name": "Marco",
+                                "review": "Just like in Italy!"
+                            },
+                            {
+                                "id": "c1t2v1r2",
+                                "name": "Isabella",
+                                "review": "Strong and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t2v1s1",
+                                "size": "50",
+                                "price": 30,
+                                "cups": "2 cups"
+                            },
+                            "medium": {
+                                "id": "c1t2v1s2",
+                                "size": "100",
+                                "price": 55,
+                                "cups": "4 cups"
+                            },
+                            "large": {
+                                "id": "c1t2v1s3",
+                                "size": "200",
+                                "price": 100,
+                                "cups": "8 cups"
+                            }
+                        }
+                    },
+                    "ristretto": {
+                        "id": "c1t2v2",
+                        "name": "Italian Ristretto",
+                        "description": "Rich and creamy espresso from Italy",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t2v2r1",
+                                "name": "Leonardo",
+                                "review": "Just like in Italy!"
+                            },
+                            {
+                                "id": "c1t2v2r2",
+                                "name": "Mia",
+                                "review": "Strong and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t2v2s1",
+                                "size": "50",
+                                "price": 35,
+                                "cups": "2 cups"
+                            },
+                            "medium": {
+                                "id": "c1t2v2s2",
+                                "size": "100",
+                                "price": 60,
+                                "cups": "4 cups"
+                            },
+                            "large": {
+                                "id": "c1t2v2s3",
+                                "size": "200",
+                                "price": 110,
+                                "cups": "8 cups"
+                            }
+                        }
+                    },
+                    "lungo": {
+                        "id": "c1t2v3",
+                        "name": "Italian Lungo",
+                        "description": "Rich and creamy espresso from Italy",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t2v3r1",
+                                "name": "Luca",
+                                "review": "Just like in Italy!"
+                            },
+                            {
+                                "id": "c1t2v3r2",
+                                "name": "Sofia",
+                                "review": "Strong and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t2v3s1",
+                                "size": "50",
+                                "price": 40,
+                                "cups": "2 cups"
+                            },
+                            "medium": {
+                                "id": "c1t2v3s2",
+                                "size": "100",
+                                "price": 65,
+                                "cups": "4 cups"
+                            },
+                            "large": {
+                                "id": "c1t2v3s3",
+                                "size": "200",
+                                "price": 120,
+                                "cups": "8 cups"
+                            }
+                        }
+                    },
+                    "macchiato": {
+                        "id": "c1t2v4",
+                        "name": "Italian Macchiato",
+                        "description": "Rich and creamy espresso from Italy",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t2v4r1",
+                                "name": "Matteo",
+                                "review": "Just like in Italy!"
+                            },
+                            {
+                                "id": "c1t2v4r2",
+                                "name": "Giulia",
+                                "review": "Strong and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t2v4s1",
+                                "size": "50",
+                                "price": 45,
+                                "cups": "2 cups"
+                            },
+                            "medium": {
+                                "id": "c1t2v4s2",
+                                "size": "100",
+                                "price": 70,
+                                "cups": "4 cups"
+                            },
+                            "large": {
+                                "id": "c1t2v4s3",
+                                "size": "200",
+                                "price": 130,
+                                "cups": "8 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "american": {
+                "id": "c1t3",
+                "10-word-description": "This is a coffee made in american so it is very good",
+                "pics": [
+                    "https://images.yaoota.com/n_IMTl_L6bEiybk2XJ7HiKvjVpw=/trim/yaootaweb-production/media/crawledproductimages/0ce6b34f11912f4640900827c22d64cecf6e1162.jpg",
+                    "https://m.media-amazon.com/images/I/41tTkFG+dgL._AC_UF894,1000_QL80_.jpg",
+                    "https://m.media-amazon.com/images/I/41tTkFG+dgL._AC_UF894,1000_QL80_.jpg"
+                ],
+                "sub-types": {
+                    "classic": {
+                        "id": "c1t3v1",
+                        "name": "American Classic Coffee",
+                        "description": "Traditional American coffee with a smooth and rich flavor",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t3v1r1",
+                                "name": "David",
+                                "review": "A perfect start to the morning."
+                            },
+                            {
+                                "id": "c1t3v1r2",
+                                "name": "Sarah",
+                                "review": "Classic taste, just how I like it."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t3v1s1",
+                                "size": "150",
+                                "price": 40,
+                                "cups": "7 cups"
+                            },
+                            "medium": {
+                                "id": "c1t3v1s2",
+                                "size": "300",
+                                "price": 75,
+                                "cups": "14 cups"
+                            },
+                            "large": {
+                                "id": "c1t3v1s3",
+                                "size": "600",
+                                "price": 140,
+                                "cups": "28 cups"
+                            }
+                        }
+                    },
+                    "decaf": {
+                        "id": "c1t3v2",
+                        "name": "American Decaf Coffee",
+                        "description": "Traditional American decaf coffee with a smooth and rich flavor",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t3v2r1",
+                                "name": "James",
+                                "review": "Great taste, but not as strong as I'd like."
+                            },
+                            {
+                                "id": "c1t3v2r2",
+                                "name": "Mia",
+                                "review": "A bit too weak for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t3v2s1",
+                                "size": "150",
+                                "price": 45,
+                                "cups": "7 cups"
+                            },
+                            "medium": {
+                                "id": "c1t3v2s2",
+                                "size": "300",
+                                "price": 80,
+                                "cups": "14 cups"
+                            },
+                            "large": {
+                                "id": "c1t3v2s3",
+                                "size": "600",
+                                "price": 150,
+                                "cups": "28 cups"
+                            }
+                        }
+                    },
+                    "decafClassic": {
+                        "id": "c1t3v3",
+                        "name": "American Decaf Classic Coffee",
+                        "description": "Traditional American decaf coffee with a smooth and rich flavor",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t3v3r1",
+                                "name": "Benjamin",
+                                "review": "A perfect start to the morning."
+                            },
+                            {
+                                "id": "c1t3v3r2",
+                                "name": "Ella",
+                                "review": "Classic taste, just how I like it."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t3v3s1",
+                                "size": "150",
+                                "price": 50,
+                                "cups": "7 cups"
+                            },
+                            "medium": {
+                                "id": "c1t3v3s2",
+                                "size": "300",
+                                "price": 85,
+                                "cups": "14 cups"
+                            },
+                            "large": {
+                                "id": "c1t3v3s3",
+                                "size": "600",
+                                "price": 160,
+                                "cups": "28 cups"
+                            }
+                        }
+                    },
+                    "decafEspresso": {
+                        "id": "c1t3v4",
+                        "name": "American Decaf Espresso",
+                        "description": "Traditional American decaf espresso with a smooth and rich flavor",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t3v4r1",
+                                "name": "Lucas",
+                                "review": "Great taste, but not as strong as I'd like."
+                            },
+                            {
+                                "id": "c1t3v4r2",
+                                "name": "Sophia",
+                                "review": "A bit too weak for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t3v4s1",
+                                "size": "50",
+                                "price": 35,
+                                "cups": "2 cups"
+                            },
+                            "medium": {
+                                "id": "c1t3v4s2",
+                                "size": "100",
+                                "price": 60,
+                                "cups": "4 cups"
+                            },
+                            "large": {
+                                "id": "c1t3v4s3",
+                                "size": "200",
+                                "price": 110,
+                                "cups": "8 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "colombian": {
+                "id": "c1t4",
+                "10-word-description": "This is a coffee made in colombian so it is very good",
+                "pics": [
+                    "https://m.media-amazon.com/images/I/71ssH7vbScL._AC_UF1000,1000_QL80_.jpg",
+                    "https://i5.walmartimages.com/seo/Starbucks-Via-Colombia-Instant-Coffee-Packets-Medium-Roast-100-Arabica-8-Count_e321b7fe-b482-47a0-9150-ae3cae08d4e9.75bbbbf21ab985eb9b97cc4bc2788d65.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+                    "https://m.media-amazon.com/images/I/71tf-K3kmwL._AC_UF1000,1000_QL80_.jpg"
+                ],
+                "sub-types": {
+                    "supremo": {
+                        "id": "c1t4v1",
+                        "name": "Colombian Supremo",
+                        "description": "A top-grade coffee with a rich and full-bodied taste",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t4v1r1",
+                                "name": "Carlos",
+                                "review": "Rich flavor, my favorite!"
+                            },
+                            {
+                                "id": "c1t4v1r2",
+                                "name": "Maria",
+                                "review": "Truly supreme quality."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t4v1s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t4v1s2",
+                                "size": "250",
+                                "price": 110,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t4v1s3",
+                                "size": "500",
+                                "price": 200,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "excelso": {
+                        "id": "c1t4v2",
+                        "name": "Colombian Excelso",
+                        "description": "A top-grade coffee with a rich and full-bodied taste",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t4v2r1",
+                                "name": "Juan",
+                                "review": "Rich flavor, my favorite!"
+                            },
+                            {
+                                "id": "c1t4v2r2",
+                                "name": "Camila",
+                                "review": "Truly supreme quality."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t4v2s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t4v2s2",
+                                "size": "250",
+                                "price": 115,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t4v2s3",
+                                "size": "500",
+                                "price": 210,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extra": {
+                        "id": "c1t4v3",
+                        "name": "Colombian Extra",
+                        "description": "A top-grade coffee with a rich and full-bodied taste",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t4v3r1",
+                                "name": "Pedro",
+                                "review": "Rich flavor, my favorite!"
+                            },
+                            {
+                                "id": "c1t4v3r2",
+                                "name": "Valentina",
+                                "review": "Truly supreme quality."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t4v3s1",
+                                "size": "125",
+                                "price": 70,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t4v3s2",
+                                "size": "250",
+                                "price": 120,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t4v3s3",
+                                "size": "500",
+                                "price": 220,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraExtra": {
+                        "id": "c1t4v4",
+                        "name": "Colombian Extra Extra",
+                        "description": "A top-grade coffee with a rich and full-bodied taste",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t4v4r1",
+                                "name": "Mateo",
+                                "review": "Rich flavor, my favorite!"
+                            },
+                            {
+                                "id": "c1t4v4r2",
+                                "name": "Sofia",
+                                "review": "Truly supreme quality."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t4v4s1",
+                                "size": "125",
+                                "price": 75,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t4v4s2",
+                                "size": "250",
+                                "price": 125,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t4v4s3",
+                                "size": "500",
+                                "price": 230,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "ethiopian": {
+                "id": "c1t5",
+                "10-word-description": "This is a coffee made in ethiopian so it is very good",
+                "pics": [
+                    "https://m.media-amazon.com/images/I/61Pmkw0GjXL.jpg",
+                    "https://coffeebeansshop.com.au/wp-content/uploads/2019/09/Coffee-Beans-Shop-Packaging-Ethiopia-coffee-beans-online.png",
+                    "https://www.tucanocoffee.com/wp-content/uploads/2020/04/3-1.jpg"
+                ],
+                "sub-types": {
+                    "yirgacheffe": {
+                        "id": "c1t5v1",
+                        "name": "Ethiopian Yirgacheffe",
+                        "description": "Exotic and aromatic coffee with floral and fruity notes",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t5v1r1",
+                                "name": "Elias",
+                                "review": "A burst of flavors, absolutely amazing."
+                            },
+                            {
+                                "id": "c1t5v1r2",
+                                "name": "Hannah",
+                                "review": "Delicate and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t5v1s1",
+                                "size": "125",
+                                "price": 70,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t5v1s2",
+                                "size": "250",
+                                "price": 130,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t5v1s3",
+                                "size": "500",
+                                "price": 240,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "sidamo": {
+                        "id": "c1t5v2",
+                        "name": "Ethiopian Sidamo",
+                        "description": "Exotic and aromatic coffee with floral and fruity notes",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t5v2r1",
+                                "name": "Noah",
+                                "review": "A burst of flavors, absolutely amazing."
+                            },
+                            {
+                                "id": "c1t5v2r2",
+                                "name": "Lily",
+                                "review": "Delicate and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t5v2s1",
+                                "size": "125",
+                                "price": 75,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t5v2s2",
+                                "size": "250",
+                                "price": 135,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t5v2s3",
+                                "size": "500",
+                                "price": 250,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "limu": {
+                        "id": "c1t5v3",
+                        "name": "Ethiopian Limu",
+                        "description": "Exotic and aromatic coffee with floral and fruity notes",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t5v3r1",
+                                "name": "Jacob",
+                                "review": "A burst of flavors, absolutely amazing."
+                            },
+                            {
+                                "id": "c1t5v3r2",
+                                "name": "Zoe",
+                                "review": "Delicate and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t5v3s1",
+                                "size": "125",
+                                "price": 80,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t5v3s2",
+                                "size": "250",
+                                "price": 140,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t5v3s3",
+                                "size": "500",
+                                "price": 260,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "harrar": {
+                        "id": "c1t5v4",
+                        "name": "Ethiopian Harrar",
+                        "description": "Exotic and aromatic coffee with floral and fruity notes",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t5v4r1",
+                                "name": "Michael",
+                                "review": "A burst of flavors, absolutely amazing."
+                            },
+                            {
+                                "id": "c1t5v4r2",
+                                "name": "Ava",
+                                "review": "Delicate and delightful."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t5v4s1",
+                                "size": "125",
+                                "price": 85,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t5v4s2",
+                                "size": "250",
+                                "price": 145,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t5v4s3",
+                                "size": "500",
+                                "price": 270,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "turkish": {
+                "id": "c1t6",
+                "10-word-description": "This is a coffee made in turkish so it is very good",
+                "pics": [
+                    "https://www.tucanocoffee.com/wp-content/uploads/2020/04/3-1.jpg",
+                    "https://seelaz.com/cdn/shop/products/TurkishCoffee.png?v=1669145044&width=713",
+                    "https://seelaz.com/cdn/shop/products/turkishCoffe125.png?v=1669145044&width=713"
+                ],
+                "sub-types": {
+                    "light": {
+                        "id": "c1t6v1",
+                        "name": "Turkish Coffee Light",
+                        "description": "A light and refreshing coffee with a hint of cardamom",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t6v1r1",
+                                "name": "William",
+                                "review": "A delightful blend of flavors."
+                            },
+                            {
+                                "id": "c1t6v1r2",
+                                "name": "Grace",
+                                "review": "A bit too light for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t6v1s1",
+                                "size": "125",
+                                "price": 90,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t6v1s2",
+                                "size": "250",
+                                "price": 160,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t6v1s3",
+                                "size": "500",
+                                "price": 300,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t6v2",
+                        "name": "Turkish Coffee Medium",
+                        "description": "A light and refreshing coffee with a hint of cardamom",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t6v2r1",
+                                "name": "Alexander",
+                                "review": "A delightful blend of flavors."
+                            },
+                            {
+                                "id": "c1t6v2r2",
+                                "name": "Victoria",
+                                "review": "A bit too light for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t6v2s1",
+                                "size": "125",
+                                "price": 95,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t6v2s2",
+                                "size": "250",
+                                "price": 165,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t6v2s3",
+                                "size": "500",
+                                "price": 310,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t6v3",
+                        "name": "Turkish Coffee Dark",
+                        "description": "A light and refreshing coffee with a hint of cardamom",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t6v3r1",
+                                "name": "Jayden",
+                                "review": "A delightful blend of flavors."
+                            },
+                            {
+                                "id": "c1t6v3r2",
+                                "name": "Chloe",
+                                "review": "A bit too light for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t6v3s1",
+                                "size": "125",
+                                "price": 100,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t6v3s2",
+                                "size": "250",
+                                "price": 170,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t6v3s3",
+                                "size": "500",
+                                "price": 320,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "HotChocklate": {
+        "id": "c2",
+        "types": {
+            "classic": {
+                "id": "c2t1",
+                "name": "Classic Hot Chocolate",
+                "description": "Rich and creamy traditional hot chocolate",
+                "stars": 4.5,
+                "pics": [
+                    "https://www.ubuy.com.eg/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY29tLnNhLzYzNjlmMWUzMGI2YzY3M2VkMjM2NTc4NC1uZXN0bGUtaG90LWNvY29hLW1peC1yaWNoLW1pbGstY2hvY29sYXRlLmpwZw.jpg",
+                    "https://cdn0.woolworths.media/content/wowproductimages/large/046127.jpg",
+                    "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/milk-chocolate-flavor-hot-81115.png"
+                ],
+                "reviews": [
+                    {
+                        "id": "c2t1r1",
+                        "name": "Alice",
+                        "review": "Warm and comforting, just like homemade!"
+                    },
+                    {
+                        "id": "c2t1r2",
+                        "name": "Bob",
+                        "review": "The perfect balance of chocolate and sweetness."
+                    }
+                ],
+                "priceAndSize": {
+                    "small": {
+                        "id": "c2t1s1",
+                        "size": "125",
+                        "price": 40,
+                        "cups": "1 cup"
+                    },
+                    "medium": {
+                        "id": "c2t1s2",
+                        "size": "250",
+                        "price": 70,
+                        "cups": "2 cups"
+                    },
+                    "large": {
+                        "id": "c2t1s3",
+                        "size": "500",
+                        "price": 130,
+                        "cups": "4 cups"
+                    }
+                }
+            },
+            "mint": {
+                "id": "c2t2",
+                "name": "Mint Hot Chocolate",
+                "description": "A refreshing twist with a hint of mint in classic hot chocolate",
+                "stars": 4,
+                "pics": [
+                    "https://cdn0.woolworths.media/content/wowproductimages/large/852937.jpg",
+                    "https://images-na.ssl-images-amazon.com/images/I/71bb8XKGs7L._AC_UL600_SR600,600_.jpg",
+                    "https://www.nashuanutrition.com/cdn/shop/products/healthsmart-protein-hot-chocolate-mint-7-servingsbox-5_1400x.jpg?v=1654527910"
+                ],
+                "reviews": [
+                    {
+                        "id": "c2t2r1",
+                        "name": "Charlie",
+                        "review": "The mint adds a delightful touch!"
+                    },
+                    {
+                        "id": "c2t2r2",
+                        "name": "Diana",
+                        "review": "So refreshing and delicious!"
+                    }
+                ],
+                "priceAndSize": {
+                    "small": {
+                        "id": "c2t2s1",
+                        "size": "125",
+                        "price": 45,
+                        "cups": "1 cup"
+                    },
+                    "medium": {
+                        "id": "c2t2s2",
+                        "size": "250",
+                        "price": 75,
+                        "cups": "2 cups"
+                    },
+                    "large": {
+                        "id": "c2t2s3",
+                        "size": "500",
+                        "price": 140,
+                        "cups": "4 cups"
+                    }
+                }
+            },
+            "spicy": {
+                "id": "c2t3",
+                "name": "Spicy Hot Chocolate",
+                "description": "A daring blend of chocolate with a kick of spice",
+                "stars": 4.2,
+                "pics": [
+                    "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/pumpkin-spice-84996.jpg",
+                    "https://smartassandsass.com/cdn/shop/files/wake-me-up-before-you-cocoa-hot-packet-2023-restock-feb-food-and-drink-gifts-under-15-25-the-spice-age-smartass-sass-164_480x480.jpg?v=1690574738",
+                    "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/milk-chocolate-flavor-hot-81115.png"
+                ],
+                "reviews": [
+                    {
+                        "id": "c2t3r1",
+                        "name": "Ethan",
+                        "review": "Love the spicy twist, very unique!"
+                    },
+                    {
+                        "id": "c2t3r2",
+                        "name": "Fiona",
+                        "review": "It's like a chocolate adventure in a cup!"
+                    }
+                ],
+                "priceAndSize": {
+                    "small": {
+                        "id": "c2t3s1",
+                        "size": "125",
+                        "price": 50,
+                        "cups": "1 cup"
+                    },
+                    "medium": {
+                        "id": "c2t3s2",
+                        "size": "250",
+                        "price": 80,
+                        "cups": "2 cups"
+                    },
+                    "large": {
+                        "id": "c2t3s3",
+                        "size": "500",
+                        "price": 150,
+                        "cups": "4 cups"
+                    }
+                }
+            },
+            "white": {
+                "id": "c2t4",
+                "name": "White Hot Chocolate",
+                "description": "Creamy and sweet white chocolate for a delightful treat",
+                "stars": 4.8,
+                "pics": [
+                    "https://cdn0.woolworths.media/content/wowproductimages/large/207980.jpg",
+                    "https://www.kroger.com/product/images/large/right/0001111002519",
+                    "https://shop.franck.eu/media/uploads/hotmix_kutija_hotchocolate_white.png"
+                ],
+                "reviews": [
+                    {
+                        "id": "c2t4r1",
+                        "name": "George",
+                        "review": "A wonderful creamy delight!"
+                    },
+                    {
+                        "id": "c2t4r2",
+                        "name": "Hannah",
+                        "review": "White chocolate perfection!"
+                    }
+                ],
+                "priceAndSize": {
+                    "small": {
+                        "id": "c2t4s1",
+                        "size": "125",
+                        "price": 40,
+                        "cups": "1 cup"
+                    },
+                    "medium": {
+                        "id": "c2t4s2",
+                        "size": "250",
+                        "price": 70,
+                        "cups": "2 cups"
+                    },
+                    "large": {
+                        "id": "c2t4s3",
+                        "size": "500",
+                        "price": 130,
+                        "cups": "4 cups"
+                    }
+                }
+            }
+        }
+    }
+}
