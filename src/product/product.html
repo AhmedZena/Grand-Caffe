@@ -9,30 +9,37 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap"
             rel="stylesheet">
         <title>Product Card</title>
+        <link rel="stylesheet" href="../side/side.css">
         <link rel="icon" href="/assets/pics/home/logo.jpg" type="image/x-icon">
         <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="../../assets/sharedStyles/styles.css">
 
         <style>
-            .linkCopied {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
 
-            #isLinkCopied {
-                color: brown;
-                font-size: 1.1rem;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                margin: 0 0 1rem 0;
-
-            }
         </style>
 
     </head>
 
     <body>
+        <div class="nav">
+            <div class="header">
+                <img src="/assets/pics/home/logo.jpg" alt="" class="logo">
+                <h1>Grand Caffe</h1>
+            </div>
+            <ul>
+                <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
+                <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            <div class="icons">
+                <a href="/src/search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- search -->
+                <a href="/src/loginReg/loginReg.html" id="loginRegProfileIcon"><i class="fa-regular fa-user"></i></a>
+                <!-- user -->
+                <a href="#"><i class="fa-regular fa-star"></i></a> <!-- fav -->
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> <!-- cart -->
+            </div>
+        </div>
         <div class="container">
             <div class="card">
                 <div class="shoeBackground">
@@ -107,8 +114,6 @@
                             This is a coffee made in french so it is very good
                         </h3>
                     </div>
-
-
                     <div class="roasting-container">
                         <h3 class="title">
                             <i class="fas fa-fire"></i>
@@ -166,10 +171,81 @@
                             <h1>choose product</h1>
                         </div>
                     </div>
+
+                    <div class="popupShowAddedToLocalStorge">
+                        <div class="popUpInfo">
+                            <i class="fas fa-check-circle"></i>
+                            <h1>Added to cart</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <footer>
+            <div class="footer">
+                <div class="help">
+                    <h3>Grand cafee help</h3>
+                    <ul>
+                        <li><a href="">search</a></li>
+                        <li><a href="">about us </a></li>
+                        <li><a href=""> contact us</a></li>
+                        <li><a href="">track your order</a></li>
+                        <li><a href="">privacy policy </a></li>
+                        <li><a href="">terms of servicies</a></li>
+                    </ul>
+                </div>
+                <div class="shop">
+                    <h3>Grand Shop</h3>
+                    <ul>
+                        <!-- <li><a href="">Home</a></li>
+                            <li><a href="">Coffe </a></li>
+                            <li><a href=""> Hot Choclate</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">Offers </a></li> -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/src/categories/coffee/coffee.html">Coffe </a></li>
+                        <li><a href="/src/categories/hot_choclat/hot.html"> Hot Choclate</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#offers">Offers </a></li>
+                    </ul>
+
+                </div>
+                <div class="Contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i><span>01043784319</span></li>
+                        <li><i class="fa-solid fa-envelope"></i><span>grandcaffe@gmail.com</span></li>
+                    </ul>
+                    <ul class="icons">
+                        <li><a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                        <li><a href="#"> <i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span>copyRight &COPY; Grand Caffe @ 2023</span>
+        </footer>
+        <div class="shopping " id="shopping">
+            <h3> Shopping cards</h3>
+            <button id="close">
+                <i class="fa fa-times"></i>
+            </button>
+
+
+            <div id="details" class="details">
+
+
+            </div>
+
+        </div>
+
         <script src="product.js"></script>
+        <script src="../side/side.js"></script>
         <script>
 
         </script>

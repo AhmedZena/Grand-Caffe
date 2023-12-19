@@ -1,0 +1,147 @@
+
+
+
+
+
+.contanier {
+  width: 100vw;
+  height: 100%;
+  padding: 0.5%;
+}
+
+.shopping {
+  position: absolute;
+  top: -0px;
+  left: -30vw;
+  background-color: black;
+  color: #fff;
+  width: 25%;
+  min-height: 140vh;
+height: auto;
+  z-index: 100;
+  padding: 1%;
+  padding-bottom: 10vh;
+}
+
+.cardPro {
+  position: absolute;
+  height: auto;
+  bottom: 0;
+}
+/* .pro{
+  
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  
+} */
+.openSide {
+  transform: translateX(30vw);
+  transition: 1.5s ease-in;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.imageCard {
+  position: absolute;
+  left: 0.6vw;
+  width: 30%;
+
+}
+
+.details {
+  display: inline-block;
+  position: static;
+  line-height: 0.2em;
+  margin-left: 8vw;
+  margin-bottom: 7vh;
+  
+}
+
+.namePro {
+  margin-top: 1%;
+  margin-bottom: 9%;
+} 
+.pricePro,.sizee{
+  margin: 9% 0;
+  padding-top: 10% 0;
+}
+
+
+
+input {
+  width: 20%;
+}
+
+.remove,
+.cards {
+  margin-left: 0.5vw;
+  background-color: rgba(255, 13, 13, 0);
+  text-decoration: underline;
+  border: none;
+  color: #fff;
+}
+
+.remove:hover,
+.cards:hover {
+  color: blue;
+}
+
+.sum {
+  position: absolute;
+  left: -1vw;
+  bottom: 9vh;
+  z-index: -1;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 10vh;
+  width: 25vw;
+  height: 20vh;
+  margin-right: 10%;
+
+}
+
+.sum h4 {
+  display: inline-block;
+
+}
+
+.checkOut {
+  width: 85%;
+  padding: 2% 0;
+  margin-bottom: 1.5%;
+  margin-top: 10%;
+}
+
+.total {
+  position: absolute;
+  right: 0;
+
+  margin-right: 9%;
+}
+
+.subTotal {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  margin-left: 5%;
+}
+
+hr {
+  margin-top:3vh;
+  margin-bottom:2vh;
+  width: 90%;
+  left: 5%;
+position: absolute;
+}
+
+@media screen and (max-width: 720px) {
+  .shopping{
+    width: 50%
+  }
+  
+}

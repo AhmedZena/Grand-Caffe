@@ -10,6 +10,9 @@ let weights = document.querySelector(".weights");
 let roastings = document.querySelector(".roastings");
 let stars = document.querySelector(".stas-icons");
 let reviews = document.querySelector(".reviews");
+let popupShowAddedToLocalStorge = document.querySelector(
+  ".popupShowAddedToLocalStorge"
+);
 
 let buy = document.querySelector(".buy");
 
@@ -184,32 +187,6 @@ for (productName in productsTypes) {
                 productSubTypes[radioValue].priceAndSize[lastproduct]
               );
 
-              //   // get from local storage
-              //   let chosenProducts = localStorage.getItem("chosenProducts")
-              //     ? JSON.parse(localStorage.getItem("chosenProducts"))
-              //     : [];
-
-              //   console.log(chosenProducts);
-
-              //   // push the chosen product to the array
-              //   chosenProducts.push(
-              //     productSubTypes[radioValue].priceAndSize[lastproduct]
-              //   );
-
-              //   console.log(chosenProducts);
-              //   // save the array to local storage
-              //   localStorage.setItem(
-              //     "chosenProducts",
-              //     JSON.stringify(chosenProducts)
-              //   );
-
-              // check if item is already in the cart
-              //   let obj = {
-              //     id: productSubTypes[radioValue].priceAndSize[lastproduct].id,
-              //     size: productSubTypes[radioValue].priceAndSize[lastproduct]
-              //       .size,
-              //   };
-
               console.log({
                 id: productSubTypes[radioValue].priceAndSize[lastproduct].id,
                 size: productSubTypes[radioValue].priceAndSize[lastproduct]
@@ -258,7 +235,19 @@ for (productName in productsTypes) {
                   "productsInCart",
                   JSON.stringify(cartItems)
                 );
+
+                // show popupShowAddedToLocalStorge
+                popupShowAddedToLocalStorge.classList.add("active");
+                popupShowAddedToLocalStorge.innerHTML = `<div class="popUpInfo">
+                    <i class="fas fa-check-circle"></i>
+                    <h1>Added to cart ${productName} ${radioValue} ${lastproduct}</h1>
+                </div>`;
+                // close after 4 seconds
+                setTimeout(function () {
+                  popupShowAddedToLocalStorge.classList.remove("active");
+                }, 1500);
               }
+              getData();
             }
           }
         });
@@ -405,5 +394,5 @@ function firePopUp() {
   setTimeout(function () {
     console.log("firePopUp");
     document.querySelector(".popup").classList.remove("active");
-  }, 4000);
+  }, 10000);
 }
