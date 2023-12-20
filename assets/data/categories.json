@@ -947,6 +947,170 @@
                         }
                     }
                 }
+            },
+            "Espresso Coffee": {
+                "id": "c1t7",
+                "10-word-description": "This is a Espresso coffee  so it is very good",
+                "pics": [
+                    "https://seelaz.com/cdn/shop/products/Espresso125gmvol2.png?v=1668458736&width=713",
+                    "https://seelaz.com/cdn/shop/products/Espresso.png?v=1668458744&width=713",
+                    "https://seelaz.com/cdn/shop/products/FrenchCoffee.png?v=1668458747&width=713"
+                ],
+                "shareLink": "https://seelaz.com/products/espresso-coffee",
+                "sub-types": {
+                    "light": {
+                        "id": "c1t7v1",
+                        "name": "Espresso coffee light",
+                        "description": "This is a Espresso coffee light so it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t7v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c1t7v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t7v1s1",
+                                "size": "125",
+                                "price": 40,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t7v1s2",
+                                "size": "250",
+                                "price": 85,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t7v1s3",
+                                "size": "500",
+                                "price": 140,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t7v2",
+                        "name": "Espresso coffee medium",
+                        "description": "This is a Espresso coffee medium  so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t7v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c1t7v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t7v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t7v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t7v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t7v3",
+                        "name": "Espresso coffee dark",
+                        "description": "This is a Espresso coffee dark  so it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t7v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c1t7v3r2",
+                                "name": "Sophia",
+                                "review": "A dark coffee lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t7v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t7v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t7v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c1t7v4",
+                        "name": "Espresso coffee extra dark",
+                        "description": "This is a Espresso coffee extra dark  so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t7v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c1t7v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t7v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t7v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t7v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
             }
         }
     },

@@ -125,7 +125,9 @@ a {
 }
 
 .edit-profile-btn,
-.edit-userBalance-btn {
+.edit-userBalance-btn,
+.edit-moreInfo-btn,
+.change-password-btn {
   width: 200px;
   height: 40px;
   background-color: #fff;
@@ -135,7 +137,9 @@ a {
 }
 
 .edit-profile-btn:hover,
-.edit-userBalance-btn:hover {
+.edit-userBalance-btn:hover,
+.edit-moreInfo-btn:hover,
+.change-password-btn:hover {
   background-color: #ccc;
 }
 
@@ -217,4 +221,69 @@ a {
 
 .edit-profile input[type="submit"]:hover {
   background-color: #ccc;
+}
+
+.edit-moreInfo {
+  display: none;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.edit-moreInfo input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.edit-moreInfo input[type="submit"]:hover {
+  background-color: #ccc;
+}
+
+.change-password {
+  display: none;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.change-password input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.change-password input[type="submit"]:hover {
+  background-color: #ccc;
+}
+
+.change-password input[type="password"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.change-password input[type="password"]:focus {
+  outline: none;
+}
+
+.change-password input[type="password"]::placeholder {
+  color: #ccc;
 }

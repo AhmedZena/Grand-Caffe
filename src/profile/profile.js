@@ -5,6 +5,12 @@ let userBgHome = document.getElementsByClassName("profile-bgHome")[0];
 let userBalance = document.getElementsByClassName("user-balance-span")[0];
 let showBalance = document.getElementsByClassName("user-balance")[0];
 
+// check if the user is loged in or not
+if (!localStorage.getItem("logedUserId")) {
+  window.location.href = "../../index.html";
+}
+
+// show user Data
 document.addEventListener("DOMContentLoaded", function () {
   let users = JSON.parse(localStorage.getItem("users"));
   let logedUserId = localStorage.getItem("logedUserId");
@@ -13,14 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("formName").placeholder = user.name;
 
   document.getElementById("formEmail").placeholder = user.email;
-  document.getElementById("formPassword").placeholder = user.password;
   document.getElementById("formBgImage").placeholder =
     user.bgImage || "bg image url";
   document.getElementById("formAvatarImage").placeholder =
     user.avatarImage || "avatar image url";
   document.getElementById("formBalance").placeholder = user.balance || "0";
   userBalance.innerHTML = user.balance ? `${user.balance} L.E` : "0 L.E";
-
+  document.getElementById("formAge").placeholder = user.age || "age";
+  document.getElementById("formCountry").placeholder = user.country || "Egypt";
   // add also to other data
   userName.innerHTML = `<i class="fa-solid fa-user"></i> ${user.name}`;
   userEmail.innerHTML = user.email;
@@ -32,11 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://37.media.tumblr.com/88cbce9265c55a70a753beb0d6ecc2cd/tumblr_n8gxzn78qH1st5lhmo1_1280.jpg";
 });
 
-// check if the user is loged in or not
-if (!localStorage.getItem("logedUserId")) {
-  window.location.href = "../../index.html";
-}
-
 // edit user also validation
 function editUser(event) {
   event.preventDefault();
@@ -44,25 +45,18 @@ function editUser(event) {
   let logedUserId = localStorage.getItem("logedUserId");
   let user = users.find((user) => user.id == logedUserId);
   let name = document.getElementById("formName").value;
-  let email = document.getElementById("formEmail").value;
-  let password = document.getElementById("formPassword").value;
-  let bgImage = document.getElementById("formBgImage").value;
-  let avatarImage = document.getElementById("formAvatarImage").value;
+  let age = document.getElementById("formAge").value;
+  let country = document.getElementById("formCountry").value;
 
   if (name) {
     user.name = name;
   }
-  if (email) {
-    user.email = email;
+
+  if (age) {
+    user.age = age;
   }
-  if (password) {
-    user.password = password;
-  }
-  if (bgImage) {
-    user.bgImage = bgImage;
-  }
-  if (avatarImage) {
-    user.avatarImage = avatarImage;
+  if (country) {
+    user.country = country;
   }
   console.log(user);
   console.log(users);
@@ -87,18 +81,126 @@ function editUserBalance(event) {
   window.location.reload();
 }
 
-function showEditForm() {
-  let editProfile = document.getElementsByClassName("edit-profile")[0];
-  editProfile.style.display = "block";
+// edit user images
+function editUserPics(event) {
+  event.preventDefault();
+  let users = JSON.parse(localStorage.getItem("users"));
+  let logedUserId = localStorage.getItem("logedUserId");
+  let user = users.find((user) => user.id == logedUserId);
+  let bgImage = document.getElementById("formBgImage").value;
+  let avatarImage = document.getElementById("formAvatarImage").value;
 
-  let editUserBalance = document.getElementsByClassName("edit-userBalance")[0];
-  editUserBalance.style.display = "none";
+  if (bgImage) {
+    user.bgImage = bgImage;
+  }
+  if (avatarImage) {
+    user.avatarImage = avatarImage;
+  }
+
+  console.log(user);
+  console.log(users);
+  localStorage.setItem("users", JSON.stringify(users));
+  window.location.reload();
+}
+
+// change password
+/*
+  <!-- change password in form separate -->
+           <form onsubmit="changePassword(event)" class="change-password">
+
+            <div class="user-info">
+                <label for="formOldPassword"> <i class="fas fa-lock"></i>Old Password: </label>
+                <input type="password" name="oldPassword" id="formOldPassword" placeholder="old password">
+                <span class="error-oldPassword"></span>
+            </div>
+
+            <div class="user-info">
+                <label for="formNewPassword"> <i class="fas fa-lock"></i>New Password: </label>
+                <input type="password" name="newPassword" id="formNewPassword" placeholder="new password">
+                    <span class="error-newPassword"></span>
+            </div>
+
+            <div class="user-info">
+                <label for="formConfirmPassword"> <i class="fas fa-lock"></i>Confirm Password: </label>
+                <input type="password" name="confirmPassword" id="formConfirmPassword" placeholder="confirm password">
+                    <span class="error-confirmPassword"></span>
+            </div>
+            <span class="error-pass"></span>
+            <input type="submit" value="save">
+        </form>
+
+
+*/
+function changePassword(event) {
+  event.preventDefault();
+  let users = JSON.parse(localStorage.getItem("users"));
+  let logedUserId = localStorage.getItem("logedUserId");
+  let user = users.find((user) => user.id == logedUserId);
+  let oldPassword = document.getElementById("formOldPassword").value;
+  let newPassword = document.getElementById("formNewPassword").value;
+  let confirmPassword = document.getElementById("formConfirmPassword").value;
+
+  // regular expression for password it should be at least 8 charachters and contain at least one number and one letter
+  let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+  if (oldPassword && newPassword && confirmPassword) {
+    if (passwordRegex.test(newPassword)) {
+      if (newPassword === confirmPassword) {
+        if (oldPassword === user.password) {
+          user.password = newPassword;
+          console.log(user);
+          console.log(users);
+          localStorage.setItem("users", JSON.stringify(users));
+          window.location.reload();
+        } else {
+          document.getElementsByClassName("error-oldPassword")[0].innerHTML =
+            "incorrect password";
+        }
+      } else {
+        document.getElementsByClassName("error-confirmPassword")[0].innerHTML =
+          "passwords don't match";
+      }
+    } else {
+      document.getElementsByClassName("error-newPassword")[0].innerHTML =
+        "password should be at least 8 charachters and contain at least one number and one letter";
+    }
+  } else {
+    document.getElementsByClassName("error-pass")[0].innerHTML =
+      "please fill all the fields";
+  }
+}
+
+// hold all the forms that will be shown
+let editProfileForm = document.getElementsByClassName("edit-profile")[0];
+let editUserBalanceForm =
+  document.getElementsByClassName("edit-userBalance")[0];
+let moreInfoForm = document.getElementsByClassName("edit-moreInfo")[0];
+let changePasswordForm = document.getElementsByClassName("change-password")[0];
+
+function showEditForm() {
+  editProfileForm.style.display = "block";
+  editUserBalanceForm.style.display = "none";
+  moreInfoForm.style.display = "none";
+  changePasswordForm.style.display = "none";
 }
 
 function showBalanceForm() {
-  let editUserBalance = document.getElementsByClassName("edit-userBalance")[0];
-  editUserBalance.style.display = "block";
+  editUserBalanceForm.style.display = "block";
+  editProfileForm.style.display = "none";
+  moreInfoForm.style.display = "none";
+  changePasswordForm.style.display = "none";
+}
 
-  let editProfile = document.getElementsByClassName("edit-profile")[0];
-  editProfile.style.display = "none";
+function showUserPicForm() {
+  moreInfoForm.style.display = "block";
+  editProfileForm.style.display = "none";
+  editUserBalanceForm.style.display = "none";
+  changePasswordForm.style.display = "none";
+}
+
+function showChangePasswordForm() {
+  changePasswordForm.style.display = "block";
+  moreInfoForm.style.display = "none";
+  editProfileForm.style.display = "none";
+  editUserBalanceForm.style.display = "none";
 }

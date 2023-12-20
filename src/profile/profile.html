@@ -8,6 +8,15 @@
         <link rel="stylesheet" href="profile.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
+        <style>
+            .error-oldPassword,
+            .error-newPassword,
+            .error-confirmPassword,
+            .error-pass {
+                color: red;
+                font-size: 12px;
+            }
+        </style>
     </head>
 
     <body>
@@ -53,7 +62,13 @@
                 profile</button>
 
             <button class="edit-userBalance-btn" onclick="showBalanceForm()">Edit
-                userBalance</button>
+                Balance</button>
+
+            <button class="edit-moreInfo-btn" onclick="showUserPicForm()">Edit
+                Images </button>
+
+            <button class="change-password-btn" onclick="showChangePasswordForm()">Change
+                password</button>
         </div>
 
 
@@ -68,22 +83,21 @@
 
             <div class="user-info">
                 <label for="formEmail"> <i class="fas fa-envelope"></i>Email: </label>
-                <input type="email" name="email" id="formEmail" placeholder="email">
+                <input type="email" name="email" id="formEmail" placeholder="email" disabled>
+            </div>
+
+
+
+            <div class="user-info">
+                <label for="formAge">
+                    <i class="fas fa-user"></i>
+                    Age: </label>
+                <input type="number" name="age" id="formAge" placeholder="age" min="12">
             </div>
 
             <div class="user-info">
-                <label for="formPassword"> <i class="fas fa-lock"></i>Password: </label>
-                <input type="password" name="password" id="formPassword" placeholder="password">
-            </div>
-
-            <div class="user-info">
-                <label for="formBgImage"> <i class="fas fa-image"></i>Bg Image: </label>
-                <input type="url" name="bgImage" id="formBgImage" placeholder="bg image url">
-            </div>
-
-            <div class="user-info">
-                <label for="formAvatarImage"> <i class="fas fa-image"></i>Avatar Image: </label>
-                <input type="url" name="avatarImage" id="formAvatarImage" placeholder="avatar image url">
+                <label for="formCountry"> <i class="fas fa-envelope"></i>Country: </label>
+                <input type="text" name="country" id="formCountry" placeholder="country">
             </div>
 
 
@@ -102,6 +116,47 @@
                 <input type="number" name="balance" id="formBalance" placeholder="balance" min="0">
             </div>
 
+            <input type="submit" value="save">
+        </form>
+
+
+
+        <!-- form also to edit age and country and informatin -->
+        <form onsubmit="editUserPics(event)" class="edit-moreInfo">
+
+            <div class="user-info">
+                <label for="formBgImage"> <i class="fas fa-image"></i>Bg Image: </label>
+                <input type="url" name="bgImage" id="formBgImage" placeholder="bg image url">
+            </div>
+
+            <div class="user-info">
+                <label for="formAvatarImage"> <i class="fas fa-image"></i>Avatar Image: </label>
+                <input type="url" name="avatarImage" id="formAvatarImage" placeholder="avatar image url">
+            </div>
+            <input type="submit" value="save">
+        </form>
+
+        <!-- change password in form separate -->
+        <form onsubmit="changePassword(event)" class="change-password">
+
+            <div class="user-info">
+                <label for="formOldPassword"> <i class="fas fa-lock"></i>Old Password: </label>
+                <input type="password" name="oldPassword" id="formOldPassword" placeholder="old password">
+                <span class="error-oldPassword"></span>
+            </div>
+
+            <div class="user-info">
+                <label for="formNewPassword"> <i class="fas fa-lock"></i>New Password: </label>
+                <input type="password" name="newPassword" id="formNewPassword" placeholder="new password">
+                <span class="error-newPassword"></span>
+            </div>
+
+            <div class="user-info">
+                <label for="formConfirmPassword"> <i class="fas fa-lock"></i>Confirm Password: </label>
+                <input type="password" name="confirmPassword" id="formConfirmPassword" placeholder="confirm password">
+                <span class="error-confirmPassword"></span>
+            </div>
+            <span class="error-pass"></span>
             <input type="submit" value="save">
         </form>
 

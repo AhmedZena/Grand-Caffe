@@ -1,38 +1,92 @@
 [
     {
         "id": "c1t1",
-        "name": "french",
-        "price": 50,
+        "name": "French Coffee",
+        "price": "150 LE",
         "images": "https://seelaz.com/cdn/shop/products/frenchcoffeCoffe125.png?v=1668458737&width=713"
     },
     {
         "id": "c1t2",
-        "name": "italian",
-        "price": 30,
-        "images": "https://m.media-amazon.com/images/I/81335EGi5EL._SL1500_.jpg"
-    },
-    {
-        "id": "c1t3",
-        "name": "american",
-        "price": 40,
+        "name": "American Coffee",
+        "price": "140 LE",
         "images": "https://seelaz.com/cdn/shop/products/amrican125.png?v=1689685074&width=493"
     },
     {
+        "id": "c1t3",
+        "name": "Mulberry Coffee",
+        "price": "110 LE",
+        "images": "https://seelaz.com/cdn/shop/products/Mulberry125gm.png?v=1668458765&width=493"
+    },
+    {
         "id": "c1t4",
-        "name": "colombian",
-        "price": 50,
-        "images": "https://i5.walmartimages.com/seo/Starbucks-Via-Colombia-Instant-Coffee-Packets-Medium-Roast-100-Arabica-8-Count_e321b7fe-b482-47a0-9150-ae3cae08d4e9.75bbbbf21ab985eb9b97cc4bc2788d65.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+        "name": "Mulberry Coffee Lite",
+        "price": "115 LE",
+        "images": "https://seelaz.com/cdn/shop/products/Mulberry125gm_eeb2cc98-c68b-4a17-b86e-a354845cc7ca.png?v=1668458771&width=493"
     },
     {
         "id": "c1t5",
-        "name": "Ethiopian",
-        "price": 70,
-        "images": "https://seelaz.com/cdn/shop/products/HazeknutCoffe125.png?v=1668458769&width=493"
+        "name": "Turkish Coffee",
+        "price": "190 LE",
+        "images": "https://seelaz.com/cdn/shop/products/TurkishCoffee.png?v=1669145044&width=713"
     },
     {
         "id": "c1t6",
-        "name": "turkish",
-        "price": 90,
-        "images": "https://seelaz.com/cdn/shop/products/TurkishCoffee.png?v=1669145044&width=713"
+        "name": "Turkish Coffee with Greek Mastic",
+        "price": "150 LE",
+        "images": "https://seelaz.com/cdn/shop/products/greekCoffee.png?v=1668458780&width=493"
+    },
+    {
+        "id": "c1t7",
+        "name": "Espresso Coffee",
+        "price": "130 LE",
+        "images": "https://seelaz.com/cdn/shop/products/Espresso125gmvol2.png?v=1668458736&width=493"
+    },
+    {
+        "id": "c1t8",
+        "name": "Arabic Coffee",
+        "price": "120 LE",
+        "images": "https://seelaz.com/cdn/shop/products/arabicCoffe125.png?v=1668458733&width=493"
+    },
+    {
+        "id": "c1t9",
+        "name": "Hazelnut Coffee",
+        "price": "150 LE",
+        "images": "https://seelaz.com/cdn/shop/products/HazeknutCoffe125.png?v=1668458769&width=493"
+    },
+    {
+        "id": "c1t10",
+        "name": "Greek Coffee",
+        "price": "170 LE",
+        "images": "https://seelaz.com/cdn/shop/products/greekcoffee_4ec1daab-2762-48f5-8d3b-f8277a049336.png?v=1668458749&width=493"
+    },
+    {
+        "id": "c1t11",
+        "name": "Greek Coffee Lite",
+        "price": "125 LE",
+        "images": "https://seelaz.com/cdn/shop/products/greekcoffeelite.png?v=1668458747&width=493"
+    },
+    {
+        "id": "c1t12",
+        "name": "Torino Coffee",
+        "price": "120 LE",
+        "images": "https://seelaz.com/cdn/shop/products/Torino125gm.png?v=1668458784&width=493"
+    },
+    {
+        "id": "c1t13",
+        "name": "Torino Coffee Lite",
+        "price": "110 LE",
+        "images": "https://seelaz.com/cdn/shop/products/TorinoLITE125gm.png?v=1668458782&width=493"
+    },
+    {
+        "id": "c1t14",
+        "name": "Clombian Coffee",
+        "price": "150 LE",
+        "images": "https://i5.walmartimages.com/seo/Starbucks-Via-Colombia-Instant-Coffee-Packets-Medium-Roast-100-Arabica-8-Count_e321b7fe-b482-47a0-9150-ae3cae08d4e9.75bbbbf21ab985eb9b97cc4bc2788d65.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+        "id": "c1t15",
+        "name": "Italian Coffee",
+        "price": "130 LE",
+        "images": "https://m.media-amazon.com/images/I/81335EGi5EL._SL1500_.jpg"
     }
 ]
