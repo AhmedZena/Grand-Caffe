@@ -67,8 +67,22 @@
   margin-bottom: 50px;
 }
 
+.plus,
+.mins {
+  background-color: #515d22;
+  border: none;
+  color: #eee8aa;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 5px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: 0.5s ease-in;
+}
+
 .namePro {
   margin-top: 1%;
+  font-size: 0.9em;
   /* margin-bottom: 9%; */
 }
 .pricePro,
@@ -81,17 +95,17 @@ input {
   width: 20%;
 }
 
-.remove,
-.cards {
+.remove {
   margin-left: 0.5vw;
   background-color: rgba(255, 13, 13, 0);
-  text-decoration: underline;
+  text-decoration: none;
   border: none;
   color: #515d22;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
-.remove:hover,
-.cards:hover {
+.remove:hover {
   color: #e60000;
   cursor: pointer;
 }
@@ -179,4 +193,11 @@ hr {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5c5c5c;
+}
+
+.count {
+  text-align: center;
+  font-size: 14px;
+  /* gap: 10px; */
+  margin: 0 10px;
 }

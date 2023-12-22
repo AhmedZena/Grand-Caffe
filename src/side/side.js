@@ -72,7 +72,7 @@ function sidebar(numPro) {
   document.getElementsByClassName(`pro${numPro}`)[0].appendChild(newEle);
 
   newEle = document.createElement("p");
-  newEle.innerHTML = `${dataFromlocal.size}`;
+  newEle.innerHTML = `${dataFromlocal.size} gm`;
   newEle.className = "sizee";
   document.getElementsByClassName(`pro${numPro}`)[0].appendChild(newEle);
 

@@ -91,13 +91,26 @@
     
 }
 
- .categories li a{
+ 
+.nav .categories li a{
     margin: 0px 10px;
     text-decoration: none;
-    /* color: #ffffffc9; */
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
     color: var(--second-color);
-
-}
+    font-style: italic;
+    font-size: 25px;
+    transition: .8s;
+  }
+  .nav .categories li a:hover{
+    background-color: var(--third-color);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1.2);
+  
+  }
 .nav .logo{
     border-radius: 50%;
     width: 60px;

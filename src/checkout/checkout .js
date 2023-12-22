@@ -10,7 +10,7 @@ var numProd = 0;
 // let user = users.find((user) => user.id == logedUserId);
 // console.log(user);
 function fetchData() {
-  shoppingcards.innerHTML = `<h3 class='head'> Shopping cards</h3> `;
+  shoppingcards.innerHTML = `<h3 class='head'> <i class="fas fa-shopping-cart"></i> Shopping cards</h3> `;
 
   for (let i = 0; i < JSON.parse(localStorage.productsInCart).length; i++) {
     createPrudects(i);
@@ -46,7 +46,7 @@ function createPrudects(numProd) {
   document.getElementsByClassName(`pro${numProd}`)[0].appendChild(newEl);
 
   newEl = document.createElement("p");
-  newEl.innerHTML = `${dataPro.size}`;
+  newEl.innerHTML = `${dataPro.size} gm`;
   newEl.className = "sizee";
   document.getElementsByClassName(`pro${numProd}`)[0].appendChild(newEl);
 
