@@ -3,6 +3,10 @@
 ## Overview
 This document outlines the features and functionalities of a comprehensive coffee shop system, including a detailed user interface for product browsing, checkout, and user profile management.
 
+## Flow Chart of Grand Coffee
+![Flowchart of Grand Coffee System](assets/docs/flow-chart.jpg)
+
+
 ### Key Features on landing page 
 - **Ads Slider:** Displays current promotions and ads.
 - **Coffee Selections:** Dedicated sections for various coffee products, including 'Coffee to Go' and 'Hot Chocolate'.
