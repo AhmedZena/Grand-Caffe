@@ -3,6 +3,7 @@
 ## Overview
 This document outlines the features and functionalities of a comprehensive coffee shop system, including a detailed user interface for product browsing, checkout, and user profile management.
 
+## Flow Chart of Grand Coffee
 ![Flowchart of Grand Coffee System](assets/docs/flow-chart.jpg)
 
 
