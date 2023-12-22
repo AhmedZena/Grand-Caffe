@@ -8,7 +8,30 @@
         <title>Grand Caffe</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
         <link rel="stylesheet" href="src/home/home.css">
+        <link rel="stylesheet" href="./assets/sharedStyles/styles.css">
 
+        <style>
+            .nameUser {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                padding: 20px;
+            }
+
+            .nameUser h2 {
+
+                font-size: 30px;
+                color: #515d22;
+                font-weight: bold;
+
+            }
+
+            .nameUser h2 span {
+                font-size: 25px;
+                font-weight: 600;
+
+            }
+        </style>
     </head>
 
     <body>
@@ -33,13 +56,17 @@
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> <!-- cart -->
 
                 </div>
-              
+
 
             </div>
             <div class="ads">
                 <i class="fas fa-angle-left change-background fa-2x"></i>
                 <img src="/assets/pics/home/background2.jpg" alt="" id="image">
-            <i class="fas fa-angle-right change-background fa-2x"></i>
+                <i class="fas fa-angle-right change-background fa-2x"></i>
+            </div>
+
+            <div class="nameUser">
+                <h2 id="nameUser"></h2>
             </div>
             <div class="cards" id="offers">
                 <h2 class="main-heading">Big Offers</h2>
@@ -66,15 +93,15 @@
                 </div>
                 <div class="content">
                     <p>Welcome to GrandCoffee Cafe,
-                         where every sip tells a story and every moment is an experience.
-                          Nestled in the heart of [City/Town], our cafe is a haven for coffee
-                           enthusiasts and those seeking a warm, inviting atmosphere.
+                        where every sip tells a story and every moment is an experience.
+                        Nestled in the heart of [City/Town], our cafe is a haven for coffee
+                        enthusiasts and those seeking a warm, inviting atmosphere.
 
-        
-                        At GrandCoffee, we believe in more than just serving coffee; 
+
+                        At GrandCoffee, we believe in more than just serving coffee;
                         we craft an environment that blends the rich tradition of coffee
-                         with modern comforts. Our passionate baristas are dedicated to creating 
-                         the perfect cup, ensuring each visit leaves you with a taste of excellence.</p>
+                        with modern comforts. Our passionate baristas are dedicated to creating
+                        the perfect cup, ensuring each visit leaves you with a taste of excellence.</p>
                     <a href="src/about/about.html">read more</a>
                 </div>
             </div>
@@ -82,11 +109,11 @@
                 <h2 class="main-heading">Our Customers Reviews</h2>
                 <div class="contain">
                     <i class="fas fa-angle-left change-background fa-2x"></i>
-                <div class="reviews-container">
+                    <div class="reviews-container">
+                    </div>
+                    <i class="fas fa-angle-right change-background fa-2x"></i>
                 </div>
-                <i class="fas fa-angle-right change-background fa-2x"></i>
-                </div>
-                
+
             </section>
             <section id="services">
                 <h2 class="main-heading">Services</h2>
@@ -122,20 +149,20 @@
                         <ul class="list">
                             <li><a href="src/search/search.html">search</a></li>
                             <li><a href="src/about/about.html">about us </a></li>
-                            <li><a href=""> contact us</a></li>
+                            <li><a href="src/contactUs/contactUs.html"> contact us</a></li>
                             <li><a href="">track your order</a></li>
-                            <li><a href="">privacy policy </a></li>
-                            <li><a href="">terms of servicies</a></li>
+                            <li><a href="src/termsAndPrivacy/TermsAndPrivacy.html">privacy policy </a></li>
+                            <li><a href="src/termsAndPrivacy/TermsAndPrivacy.html">terms of servicies</a></li>
                         </ul>
                     </div>
                     <div class="shop">
                         <h3>Grand Shop</h3>
                         <ul class="list">
-                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
-                    <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
-                    <li><a href="#offers">Offers</a></li>
-                    <li><a href="src/about/about.html">About</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
+                            <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
+                            <li><a href="#offers">Offers</a></li>
+                            <li><a href="src/about/about.html">About</a></li>
                         </ul>
 
                     </div>

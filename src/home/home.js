@@ -1,18 +1,12 @@
-
-
-
 let loginRegProfile = document.getElementById("loginRegProfileIcon");
 
 if (localStorage.getItem("logedUserId")) {
- 
   loginRegProfile.href = "/src/profile/profile.html";
   loginRegProfile.innerHTML = `<i class="fa-regular fa-user"></i>`;
 } else {
   loginRegProfile.href = "/src/loginReg/loginReg.html";
   loginRegProfile.innerHTML = `<i class="fa-solid fa-right-to-bracket"></i>`;
 }
-
-
 
 // ads
 
@@ -154,46 +148,57 @@ xhr4.addEventListener("load", function () {
   }
 });
 // coffe
-let xhr5=new XMLHttpRequest();
+let xhr5 = new XMLHttpRequest();
 xhr5.open("get", "assets/data/simpleCoffee.json");
 xhr5.send();
-let coffeContainer=document.getElementsByClassName("coffe-cateogory")[0]
+let coffeContainer = document.getElementsByClassName("coffe-cateogory")[0];
 xhr5.addEventListener("load", function () {
   if (xhr4.status == 200) {
-    let coffes=JSON.parse(xhr5.response)
-    console.log(coffes)
-    for(let i=0; i<4; i++){
-      console.log(coffes[i].images)
-      coffeContainer.innerHTML +=`
+    let coffes = JSON.parse(xhr5.response);
+    console.log(coffes);
+    for (let i = 0; i < 4; i++) {
+      console.log(coffes[i].images);
+      coffeContainer.innerHTML += `
       <div class="coffe-card">
      <img src=${coffes[i].images} />
       <h3>${coffes[i].name}</h3>
       <span class="price">price $ ${coffes[i].price} </span>
       </div>
-      `
+      `;
     }
   }
-  });
+});
 
 // hot choclate
-let xhr6=new XMLHttpRequest();
+let xhr6 = new XMLHttpRequest();
 xhr6.open("get", "assets/data/simpleHotChock.json");
 xhr6.send();
-let hotChoclateContainer=document.getElementsByClassName("hotchoclate-cateogory")[0]
+let hotChoclateContainer = document.getElementsByClassName(
+  "hotchoclate-cateogory"
+)[0];
 xhr6.addEventListener("load", function () {
   if (xhr4.status == 200) {
-    let choclate=JSON.parse(xhr6.response)
-    console.log(choclate)
-    for(let i=0; i<4; i++){
-      console.log(choclate[i].images)
-      hotChoclateContainer.innerHTML +=`
+    let choclate = JSON.parse(xhr6.response);
+    console.log(choclate);
+    for (let i = 0; i < 4; i++) {
+      console.log(choclate[i].images);
+      hotChoclateContainer.innerHTML += `
       <div class="coffe-card">
      <img src=${choclate[i].images} />
       <h3>${choclate[i].name}</h3>
       <span class="price">price $ ${choclate[i].price} </span>
       </div>
-      `
+      `;
     }
   }
-  });
+});
 
+let users = JSON.parse(localStorage.getItem("users"));
+
+if (users) {
+  let logedUserId = localStorage.getItem("logedUserId");
+  let user = users.find((user) => user.id == logedUserId);
+  user
+    ? (nameUser.innerHTML = ` Welcome: <span id="nameUser">${user.name}</span>`)
+    : (nameUser.innerHTML = "");
+}

@@ -46,12 +46,18 @@
                     <img class="avatar" src="http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200"
                         alt="jofpin" />
                 </div>
-                <button class="btn-log-out"
-                    onclick="localStorage.removeItem('logedUserId'); window.location.href = '../../index.html'"
-                    type="button">
-                    <i class="fas fa-sign-out-alt"></i>
-                    Logout</button>
 
+                <div class="btns-logOut-removeAccount">
+                    <button class="logOut-btn"
+                        onclick="localStorage.removeItem('logedUserId'); window.location.href = '../../index.html'"
+                        type="button">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout</button>
+                    <button class="removeAccount-btn" onclick="removeAccount(); " type="button">
+                        <i class="fas fa-remove"></i>
+                        Remove Account</button>
+
+                </div>
 
                 <div class="user-profile-data">
                     <h1 class="user-name">
@@ -74,32 +80,39 @@
                         Age:
                         <span class="user-age-span">Not Set</span>
                         </h3>
-                        <p><i class="fas fa-envelope"></i>
+                        <h4><i class="fas fa-envelope"></i>
                             Country:
-                            <span class="user-country-span">0</span>
-                        </p>
+                            <span class="user-country-span">Not Set</span>
+                        </h4>
+                </div>
+                <div class="user-products">
+                    <h2>
+                        <i class="fas fa-shopping-cart"></i>
+
+                        Products Bought
+                    </h2>
+                    <div class="user-products-container">
+
+
+                    </div>
                 </div>
 
-                <!-- section for products buyed  -->
 
+                <div class="edit-buttons">
+                    <button class="edit-profile-btn" onclick="showEditForm()">Edit
+                        profile</button>
 
+                    <button class="edit-userBalance-btn" onclick="showBalanceForm()">Edit
+                        Balance</button>
+
+                    <button class="edit-moreInfo-btn" onclick="showUserPicForm()">Edit
+                        Images </button>
+
+                    <button class="change-password-btn" onclick="showChangePasswordForm()">Change
+                        password</button>
+                </div>
             </div>
         </div>
-
-        <div class="edit-buttons">
-            <button class="edit-profile-btn" onclick="showEditForm()">Edit
-                profile</button>
-
-            <button class="edit-userBalance-btn" onclick="showBalanceForm()">Edit
-                Balance</button>
-
-            <button class="edit-moreInfo-btn" onclick="showUserPicForm()">Edit
-                Images </button>
-
-            <button class="change-password-btn" onclick="showChangePasswordForm()">Change
-                password</button>
-        </div>
-
 
         <form onsubmit="editUser(event)" class="edit-profile">
 
@@ -196,7 +209,7 @@
                     <ul class="list">
                         <li><a href="">search</a></li>
                         <li><a href="">about us </a></li>
-                        <li><a href=""> contact us</a></li>
+                        <li><a href="../contactUs/contactUs.html"> contact us</a></li>
                         <li><a href="">track your order</a></li>
                         <li><a href="">privacy policy </a></li>
                         <li><a href="">terms of servicies</a></li>

@@ -8,6 +8,11 @@ if (localStorage.getItem("logedUserId")) {
   loginRegProfile.innerHTML = `<i class="fa-solid fa-right-to-bracket"></i>`;
 }
 
+// check if the user is loged in or not
+if (!localStorage.getItem("logedUserId")) {
+  window.location.href = "../../index.html";
+}
+
 let userName = document.getElementsByClassName("user-name")[0];
 let userEmail = document.getElementsByClassName("user-email")[0];
 let userAvatar = document.getElementsByClassName("avatar")[0];
@@ -15,10 +20,9 @@ let userBgHome = document.getElementsByClassName("profile-bgHome")[0];
 let userBalance = document.getElementsByClassName("user-balance-span")[0];
 let showBalance = document.getElementsByClassName("user-balance")[0];
 
-// check if the user is loged in or not
-if (!localStorage.getItem("logedUserId")) {
-  window.location.href = "../../index.html";
-}
+let userProducts = document.getElementsByClassName(
+  "user-products-container"
+)[0];
 
 // show user Data
 document.addEventListener("DOMContentLoaded", function () {
@@ -35,8 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
     user.avatarImage || "avatar image url";
   document.getElementById("formBalance").placeholder = user.balance || "0";
   userBalance.innerHTML = user.balance ? `${user.balance} L.E` : "0 L.E";
-  document.getElementById("formAge").placeholder = user.age || "age";
-  document.getElementById("formCountry").placeholder = user.country || "Egypt";
+  document.getElementById("formAge").placeholder = user.age || "Not Set";
+  //   user-age-span
+  document.getElementsByClassName("user-age-span")[0].innerHTML =
+    user.age || "Not Set";
+
+  document.getElementById("formCountry").placeholder =
+    user.country || "Not Set";
+  //   user - country - span;
+  document.getElementsByClassName("user-country-span")[0].innerHTML =
+    user.country || "Not Set";
+
   // add also to other data
   userName.innerHTML = `<i class="fa-solid fa-user"></i> ${user.name}`;
   userEmail.innerHTML = user.email;
@@ -46,6 +59,60 @@ document.addEventListener("DOMContentLoaded", function () {
   userBgHome.src =
     user.bgImage ||
     "https://37.media.tumblr.com/88cbce9265c55a70a753beb0d6ecc2cd/tumblr_n8gxzn78qH1st5lhmo1_1280.jpg";
+
+  // show user products
+  let userProducts = document.getElementsByClassName(
+    "user-products-container"
+  )[0];
+
+  let userProductsHtml = "";
+
+  user.prouctsBuyed
+    ? user.prouctsBuyed.forEach((product) => {
+        userProductsHtml += `
+      <div class="user-product">
+      <div class="user-product-img">
+          <img src="${product.pics[0]}" alt="">
+      </div>
+      <div class="user-product-info">
+          <h3>${product.name}</h3>
+          <div class="user-product-info-quantity">
+          <p>price: <span> ${product.price} L.E</span></p>
+          <p>size: <span> ${product.size} gm </span></p>
+          <p>nums ordered: <span> ${product.chosnNumber} </span></p>
+            <p>Sub Total price: <span> ${
+              product.chosnNumber * product.price
+            } L.E</span></p>
+          </div>
+      </div>
+    </div>
+        `;
+      })
+    : (userProductsHtml = `<h4>
+    <span> you didn't buy any products yet</span>
+    </h4>`);
+
+  // append total price also to the user products but calculate it first
+  let totalPrice = 0;
+  user.prouctsBuyed
+    ? user.prouctsBuyed.forEach((product) => {
+        totalPrice += product.chosnNumber * product.price;
+      })
+    : (totalPrice = 0);
+
+  userProductsHtml += `
+      <div class="user-product">
+
+      <div class="user-product-info">
+          <h3>Total price paid</h3>
+          <div class="user-product-info-quantity">
+          <p>price: <span> ${totalPrice} L.E</span></p>
+          </div>
+      </div>
+      </div>
+      `;
+
+  userProducts.innerHTML = userProductsHtml;
 });
 
 // edit user also validation
@@ -185,4 +252,16 @@ function showChangePasswordForm() {
   moreInfoForm.style.display = "none";
   editProfileForm.style.display = "none";
   editUserBalanceForm.style.display = "none";
+}
+
+function removeAccount() {
+  let users = JSON.parse(localStorage.getItem("users"));
+  let logedUserId = localStorage.getItem("logedUserId");
+  let user = users.find((user) => user.id == logedUserId);
+
+  let index = users.indexOf(user);
+  users.splice(index, 1);
+  localStorage.setItem("users", JSON.stringify(users));
+  localStorage.removeItem("logedUserId");
+  window.location.href = "../../index.html";
 }

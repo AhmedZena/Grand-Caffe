@@ -19,14 +19,14 @@ a {
 }
 .content-profile-page {
   margin: 1em auto;
-  width: 44.23em;
+  width: 47em;
   padding: 10px;
 }
 
 .card {
   background: var(--second-color);
   border-radius: 0.3rem;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border: 0.1em solid rgba(0, 0, 0, 0.2);
   margin-bottom: 1em;
 }
@@ -37,15 +37,18 @@ a {
 }
 .profile-bgHome {
   border-bottom: 0.2em solid var(--second-color);
-  width: 44.23em;
+  width: 45.6em;
   height: 16em;
+  margin: 0 auto;
+  border-radius: 0.3rem 0.3rem 0 0;
 }
-.profile-bgHome img {
+/* .profile-bgHome img {
   width: 100%;
   height: 100%;
-  border-radius: 0.3rem 0.3rem 0 0;
+  border-radius: 50% !important;
   background-size: cover;
-}
+  margin-right: 0.3rem;
+} */
 .avatar {
   margin: 0 auto;
   background: var(--second-color);
@@ -64,24 +67,56 @@ a {
   border-radius: 0.3rem;
 }
 
-.btn-log-out {
+.btns-logOut-removeAccount {
   position: absolute;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: bold;
   cursor: pointer;
-  width: 7em;
-  background: var(--main-color);
-  border: 1px solid var(--third-color);
+  width: 220px;
+  /* background: var(--main-color);
+  border: 1px solid var(--third-color); */
   color: #fff;
   outline: none;
   border-radius: 0 0.6em 0.6em 0;
-  padding: 0.8em;
+  /* padding: 0.8em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-log-out:hover {
+.logOut-btn {
   background: var(--main-color);
-  transition: background 0.2s ease-in-out;
-  border: 1px solid var(--main-color);
+  padding: 0.5em;
+  border-radius: 0.6em;
+  cursor: pointer;
+  color: var(--third-color);
+  transition: all 0.5s ease-in-out;
+  font-size: 1.2em;
+  margin-right: 5px;
+  border: none;
+}
+
+.logOut-btn:hover {
+  background: var(--third-color);
+  color: var(--main-color);
+  font-size: 1.3em;
+}
+
+.removeAccount-btn {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  padding: 0.6em;
+  border-radius: 0.6em;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.2em;
+  border: none;
+}
+
+.removeAccount-btn:hover {
+  background: red;
+  font-size: 1.3em;
+  color: #fff;
 }
 
 .profile-user-page .user-profile-data {
@@ -110,7 +145,7 @@ a {
 .user-balance p {
   font-size: 1.1em;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
 }
 
 .user-balance-span {
@@ -119,7 +154,7 @@ a {
   color: #8899a6;
   font-size: 1.1em;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   font-weight: bold;
 }
 
@@ -129,18 +164,22 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
   gap: 20px;
+  padding: 0 20px;
 }
 
 .edit-profile-btn,
 .edit-userBalance-btn,
 .edit-moreInfo-btn,
 .change-password-btn {
-  width: 200px;
+  width: 150px;
   height: 40px;
-  /* background-color: var(--second-color); */
-  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  /* border: 1px solid var(--main-color); */
+  color: rgb(248, 228, 228);
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
 }
 
 .edit-profile-btn:hover,
@@ -148,6 +187,9 @@ a {
 .edit-moreInfo-btn:hover,
 .change-password-btn:hover {
   background-color: var(--third-color);
+  color: var(--main-color);
+  width: 200px;
+  border: 1px solid var(--main-color);
 }
 
 .edit-userBalance {
@@ -155,12 +197,13 @@ a {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--main-color);
   border-radius: 5px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
-.edit-userBalance input[type="submit"] {
+/* .edit-userBalance input[type="submit"] {
   width: 100%;
   height: 40px;
   background-color: var(--second-color);
@@ -168,11 +211,11 @@ a {
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
-}
+} */
 
-.edit-userBalance input[type="submit"]:hover {
+/* .edit-userBalance input[type="submit"]:hover {
   background-color: var(--third-color);
-}
+} */
 
 .edit-profile {
   display: none;
@@ -217,18 +260,31 @@ a {
   color: black;
 }
 
-.edit-profile input[type="submit"] {
+.edit-profile input[type="submit"],
+.edit-moreInfo input[type="submit"],
+.change-password input[type="submit"],
+.edit-userBalance input[type="submit"] {
   width: 100%;
   height: 40px;
-  /* background-color: var(--second-color); */
+  background-color: var(--main-color);
   border: 1px solid var(--second-color);
+  color: rgb(248, 228, 228);
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
+  font-size: 1em;
+  transition: all 0.5s ease-in-out;
 }
 
-.edit-profile input[type="submit"]:hover {
-  background-color: var(--main-color);
+.edit-profile input[type="submit"]:hover,
+.edit-moreInfo input[type="submit"]:hover,
+.change-password input[type="submit"]:hover,
+.edit-userBalance input[type="submit"]:hover {
+  background-color: var(--third-color);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .edit-moreInfo {
@@ -236,23 +292,11 @@ a {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--main-color);
+
   border-radius: 5px;
   padding: 20px;
-}
-
-.edit-moreInfo input[type="submit"] {
-  width: 100%;
-  height: 40px;
-  background-color: var(--second-color);
-  border: 1px solid var(--second-color);
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.edit-moreInfo input[type="submit"]:hover {
-  background-color: var(--third-color);
+  margin-bottom: 20px;
 }
 
 .change-password {
@@ -260,23 +304,10 @@ a {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--main-color);
   border-radius: 5px;
   padding: 20px;
-}
-
-.change-password input[type="submit"] {
-  width: 100%;
-  height: 40px;
-  background-color: var(--second-color);
-  border: 1px solid var(--second-color);
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.change-password input[type="submit"]:hover {
-  background-color: var(--third-color);
+  margin-bottom: 20px;
 }
 
 .change-password input[type="password"] {
@@ -302,4 +333,101 @@ a {
 .error-pass {
   color: red;
   font-size: 12px;
+}
+.user-moreInfo {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-moreInfo h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-moreInfo h4 span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #8899a6;
+}
+
+.user-products {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-products h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #515d22;
+}
+
+.user-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-products-container h4 span {
+  color: #8899a6;
+}
+
+.user-product {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-product-img {
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.user-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.user-product-info {
+  padding: 10px;
+}
+
+.user-product-info-quantity {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-product-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-product-info p {
+  font-weight: bold;
+  color: #515d22;
+}
+
+.user-product-info p span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8899a6;
 }
