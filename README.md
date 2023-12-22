@@ -6,6 +6,11 @@ This document outlines the features and functionalities of a comprehensive coffe
 ## Flow Chart of Grand Coffee
 ![Flowchart of Grand Coffee System](assets/docs/flow-chart.jpg)
 
+### sequence diagram illustrating a simple guide for users on how to navigate and use your website:
+![use case](assets/docs/use-case.jpg)
+
+
+
 
 ### Key Features on landing page 
 - **Ads Slider:** Displays current promotions and ads.
