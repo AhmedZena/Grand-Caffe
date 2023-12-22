@@ -1,14 +1,4 @@
-let loginRegProfile = document.getElementById("loginRegProfileIcon");
-
-if (localStorage.getItem("logedUserId")) {
- 
-  loginRegProfile.href = "/src/profile/profile.html";
-  loginRegProfile.innerHTML = `<i class="fa-regular fa-user"></i>`;
-} else {
-  loginRegProfile.href = "/src/loginReg/loginReg.html";
-  loginRegProfile.innerHTML = `<i class="fa-solid fa-right-to-bracket"></i>`;
-}
-
+  
 
 const mostPopPorducts = document.querySelector(".most-popular-products");
 
@@ -67,3 +57,12 @@ fetch(jsonFile)
 //         `;
 // 		});
 // 	});
+
+mostPopPorducts.addEventListener("click", (e) => {
+  const productCard = e.target.closest(".product-card");
+  if (productCard) {
+    const productId = productCard.dataset.productId;
+    localStorage.setItem("coffeeTypeId", productId);
+    window.location.href = "../../product/product.html";
+  }
+});

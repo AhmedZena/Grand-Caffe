@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*  --main-color: #515d22;
+  --second-color: #eee8aa;
+  --third-color: #f4d61c; */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +13,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: rgb(226, 226, 226);
+  background: #eee8aa;
 }
 .container nav {
   position: sticky;
@@ -137,6 +141,7 @@ body {
   font-size: 14px;
   padding-right: 15px;
 }
+
 .users .card button {
   width: 100%;
   margin-top: 8px;
@@ -144,10 +149,10 @@ body {
   cursor: pointer;
   border-radius: 10px;
   background: transparent;
-  border: 1px solid #4ad489;
+  border: 1px solid #515d22;
 }
 .users .card button:hover {
-  background: #4ad489;
+  background: #515d22;
   color: #fff;
   transition: 0.5s;
 }
@@ -175,7 +180,7 @@ body {
 }
 table thead tr {
   color: #fff;
-  background: #34af6d;
+  background: #515d22;
   text-align: left;
   font-weight: bold;
 }
@@ -191,10 +196,10 @@ table thead tr {
 }
 .table tbody tr.active {
   font-weight: bold;
-  color: #4ad489;
+  color: #515d22;
 }
 .table tbody tr:last-of-type {
-  border-bottom: 2px solid #4ad489;
+  border-bottom: 2px solid #515d22;
 }
 .table button {
   padding: 6px 20px;

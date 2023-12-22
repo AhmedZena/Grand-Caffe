@@ -172,7 +172,7 @@
                 "pics": [
                     "https://m.media-amazon.com/images/I/81335EGi5EL._SL1500_.jpg",
                     "https://www.zicaffe.com/shop/329/black-of-italy-and-cups-pack.jpg",
-                    "https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/1682501-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MzU4Nzh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzNZeTlvWlRJdmFEQXdMemt6TlRnMk1EUXpNRFEwTVRRdWFuQm58MjQzODk5ZWI2NmI1Y2UzMjhiMjEyMmIwODliODdlMzZiOGE2OTRiN2Q3NzQ3OWQ4ZDEyYmU0NzQyNjQ4MDIzMg"
+                    "https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/1682501-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc2w2MzU4Nzh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzNZeTlvWlRJdmFEQXdMemt6TlRnMk1EUXpNRFEwTVRRdWFuQm58MjQzODk5ZWI2NmI1Y2UzMjhiMjEyMmIwODliODdlMzZiOGE2OTRiN2Q3NzQ3OWQ4ZDEyYmU0NzQyNjQ4MDIzMg"
                 ],
                 "shareLink": "https://seelaz.com/products/italian-coffee",
                 "sub-types": {
@@ -499,7 +499,7 @@
                 "10-word-description": "This is a coffee made in colombian so it is very good",
                 "pics": [
                     "https://m.media-amazon.com/images/I/71ssH7vbScL._AC_UF1000,1000_QL80_.jpg",
-                    "https://i5.walmartimages.com/seo/Starbucks-Via-Colombia-Instant-Coffee-Packets-Medium-Roast-100-Arabica-8-Count_e321b7fe-b482-47a0-9150-ae3cae08d4e9.75bbbbf21ab985eb9b97cc4bc2788d65.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+                    "https://i5.walmartimages.com/seo/Starbucks-Via-Colombia-Instant-Coffee-Packets-Medium-Roast-100-Arabica-8-Count_e321b7fe-b482-47a0-9150-ae3cae08d4e9.75bbbbf21ab985eb9b97cc2b32788d65.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
                     "https://m.media-amazon.com/images/I/71tf-K3kmwL._AC_UF1000,1000_QL80_.jpg"
                 ],
                 "shareLink": "https://seelaz.com/products/colombian-coffee",
@@ -948,7 +948,7 @@
                     }
                 }
             },
-            "Espresso Coffee": {
+            "Espresso": {
                 "id": "c1t7",
                 "10-word-description": "This is a Espresso coffee  so it is very good",
                 "pics": [
@@ -1111,7 +1111,827 @@
                         }
                     }
                 }
+            },
+            "Hazelnut": {
+                "id": "c1t8",
+                "10-word-description": "This is a Hazelnut coffee so it is very good",
+                "pics": [
+                    "https://seelaz.com/cdn/shop/products/HazeknutCoffe125.png?v=1668458769&width=493",
+                    "https://seelaz.com/cdn/shop/products/HazelnutCoffee_732db0bd-0e96-4f5c-b53f-97597d2a7e54.png?v=1668458754&width=493",
+                    "https://seelaz.com/cdn/shop/products/HazelnutCoffee.png?v=1668458785&width=493"
+                ],
+                "shareLink": "https://seelaz.com/products/hazelnut-coffee",
+                "sub-types": {
+                    "light": {
+                        "id": "c1t8v1",
+                        "name": "Hazelnut Coffee",
+                        "description": "This is a coffee light so it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t8v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c1t8v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t8v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t8v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t8v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t8v2",
+                        "name": "Hazelnut Coffee medium",
+                        "description": "This is a coffee medium so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t8v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c1t8v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t8v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t8v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t8v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t8v3",
+                        "name": "Hazelnut Coffee dark",
+                        "description": "This is a coffee dark so it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t8v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c1t8v3r2",
+                                "name": "Sophia",
+                                "review": "A dark coffee lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t8v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t8v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t8v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c1t8v4",
+                        "name": "Hazelnut coffee extra dark",
+                        "description": "This is a coffee extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t8v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c1t8v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t8v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t8v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t8v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "Greek": {
+                "id": "c1t9",
+                "10-word-description": "This is a Greek coffee so it is very good",
+                "pics": [
+                    "https://seelaz.com/cdn/shop/products/greekcoffee_4ec1daab-2762-48f5-8d3b-f8277a049336.png?v=1668458749&width=493",
+                    "https://seelaz.com/cdn/shop/products/GreekCoffee_fca6c765-3cad-4ad6-a7bd-c2425b6ea180.png?v=1668458763&width=493",
+                    "https://seelaz.com/cdn/shop/products/Greekcoffe.png?v=1668458775&width=493"
+                ],
+                "shareLink": "https://seelaz.com/products/greek-coffee",
+                "sub-types": {
+                    "light": {
+                        "id": "c1t9v1",
+                        "name": "Greek Coffee",
+                        "description": "This is a Greek coffee light so it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t9v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c1t9v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t9v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t9v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t9v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t9v2",
+                        "name": "Greek Coffee medium",
+                        "description": "This is a coffee medium so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t9v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c1t9v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t9v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t9v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t9v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t9v3",
+                        "name": "Greek Coffee dark",
+                        "description": "This is a coffee dark so it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t9v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c1t9v3r2",
+                                "name": "Sophia",
+                                "review": "A dark coffee lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t9v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t9v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t9v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c1t9v4",
+                        "name": "Greek coffee extra dark",
+                        "description": "This is a coffee extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t9v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c1t9v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t9v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t9v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t9v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "Torino": {
+                "id": "c1t10",
+                "10-word-description": "This is a Torino coffee so it is very good",
+                "pics": [
+                    "https://seelaz.com/cdn/shop/products/Torino125gm.png?v=1668458784&width=493",
+                    "https://seelaz.com/cdn/shop/products/TorinoCoffee.png?v=1668458796&width=493",
+                    "https://seelaz.com/cdn/shop/products/TorinoCoffee_0337aa4b-ae03-48d5-95c6-cb531b175ee3.png?v=1668458800&width=493"
+                ],
+                "shareLink": "https://seelaz.com/products/torino-coffee",
+                "sub-types": {
+                    "light": {
+                        "id": "c1t10v1",
+                        "name": "Torino Coffee",
+                        "description": "This is a Torino coffee light so it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t10v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c1t10v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t10v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t10v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t10v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t10v2",
+                        "name": "Torino Coffee medium",
+                        "description": "This is a coffee medium so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t10v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c1t10v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t10v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t10v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t10v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t10v3",
+                        "name": "Torino Coffee dark",
+                        "description": "This is a coffee dark so it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t10v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c1t10v3r2",
+                                "name": "Sophia",
+                                "review": "A dark coffee lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t10v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t10v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t10v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c1t10v4",
+                        "name": "Torino coffee extra dark",
+                        "description": "This is a coffee extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t10v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c1t10v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t10v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t10v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t10v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "Arabic": {
+                "id": "c1t11",
+                "10-word-description": "This is a Arabic Coffee Lite coffee so it is very good",
+                "pics": [
+                    "https://seelaz.com/cdn/shop/products/arabicCoffe125.png?v=1668458733&width=493",
+                    "https://seelaz.com/cdn/shop/products/arabicCoffee.png?v=1668458779&width=493",
+                    "https://seelaz.com/cdn/shop/products/arabiccoffe.png?v=1668458742&width=493"
+                ],
+                "shareLink": "https://seelaz.com/products/arabic-coffee",
+                "sub-types": {
+                    "light": {
+                        "id": "c1t11v1",
+                        "name": "Arabic Coffee Lite light",
+                        "description": "This is a coffee light so it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t11v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c1t11v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t11v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t11v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t11v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t11v2",
+                        "name": "Arabic Coffee Lite medium",
+                        "description": "This is a coffee medium so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t11v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c1t11v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t11v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t11v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t11v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t11v3",
+                        "name": "Arabic Coffee dark",
+                        "description": "This is a coffee dark so it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t11v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c1t11v3r2",
+                                "name": "Sophia",
+                                "review": "A dark coffee lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t11v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t11v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t11v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c1t11v4",
+                        "name": "Arabic coffee extra dark",
+                        "description": "This is a coffee extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t11v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c1t11v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t11v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t11v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t11v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "Mulberry": {
+                "id": "c1t12",
+                "10-word-description": "This is a Mulberry coffee ,it is very good",
+                "pics": [
+                    "https://seelaz.com/cdn/shop/products/Mulberry125gm.png?v=1668458765&width=493",
+                    "https://seelaz.com/cdn/shop/products/mulberry.png?v=1668458788&width=493"
+                ],
+                "shareLink": "https://seelaz.com/products/mulberry-coffee",
+                "sub-types": {
+                    "light": {
+                        "id": "c1t12v1",
+                        "name": "Mulberry coffee light",
+                        "description": "This is a Mulberry coffee light so it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c1t12v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c1t12v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t12v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t12v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t12v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c1t12v2",
+                        "name": "Mulberry coffee medium",
+                        "description": "This is a Mulberry coffee medium so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c1t12v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c1t12v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t12v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t12v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t12v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c1t12v3",
+                        "name": "Mulberry coffee dark",
+                        "description": "This is a Mulberry coffee dark so it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c1t12v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c1t12v3r2",
+                                "name": "Sophia",
+                                "review": "A dark coffee lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t12v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t12v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t12v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c1t12v4",
+                        "name": "Mulberry coffee extra dark",
+                        "description": "This is a Mulberry coffee extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c1t12v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c1t12v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c1t12v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c1t12v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c1t12v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
             }
+            
         }
     },
     "HotChocklate": {
@@ -1119,176 +1939,661 @@
         "types": {
             "classic": {
                 "id": "c2t1",
-                "name": "Classic Hot Chocolate",
-                "description": "Rich and creamy traditional hot chocolate",
-                "stars": 4.5,
+                "10-word-description": "Classic Hot Chocolate",
                 "pics": [
-                    "https://www.ubuy.com.eg/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY29tLnNhLzYzNjlmMWUzMGI2YzY3M2VkMjM2NTc4NC1uZXN0bGUtaG90LWNvY29hLW1peC1yaWNoLW1pbGstY2hvY29sYXRlLmpwZw.jpg",
+                    "https://www.ubuy.com.eg/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY29tLnNhLzYzNjlmMWUzMGI2YzY3M2VkMjM2NTc2N31uZXN0bGUtaG90LWNvY29hLW1peC1yaWNoLW1pbGstY2hvY29sYXRlLmpwZw.jpg",
                     "https://cdn0.woolworths.media/content/wowproductimages/large/046127.jpg",
                     "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/milk-chocolate-flavor-hot-81115.png"
                 ],
-                "reviews": [
-                    {
-                        "id": "c2t1r1",
-                        "name": "Alice",
-                        "review": "Warm and comforting, just like homemade!"
-                    },
-                    {
-                        "id": "c2t1r2",
-                        "name": "Bob",
-                        "review": "The perfect balance of chocolate and sweetness."
-                    }
-                ],
-                "priceAndSize": {
-                    "small": {
-                        "id": "c2t1s1",
-                        "size": "125",
-                        "price": 40,
-                        "cups": "1 cup"
+                "shareLink": "",
+                "sub-types": {
+                    "light": {
+                        "id": "c2t1v1",
+                        "name": "classic light",
+                        "description": "This is a classic light chockolate it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c2t1v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c2t1v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t1v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t1v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t1v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
                     },
                     "medium": {
-                        "id": "c2t1s2",
-                        "size": "250",
-                        "price": 70,
-                        "cups": "2 cups"
+                        "id": "c2t1v2",
+                        "name": "classic medium",
+                        "description": "This is a chockolate medium so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c2t1v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c2t1v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t1v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t1v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t1v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
                     },
-                    "large": {
-                        "id": "c2t1s3",
-                        "size": "500",
-                        "price": 130,
-                        "cups": "4 cups"
+                    "dark": {
+                        "id": "c2t1v3",
+                        "name": "classic dark",
+                        "description": "This is a coffee dark it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c2t1v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c2t1v3r2",
+                                "name": "Sophia",
+                                "review": "A dark lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t1v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t1v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t1v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c2t1v4",
+                        "name": "classic extra dark",
+                        "description": "This is a chockolate extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c2t1v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c2t1v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t1v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t1v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t1v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
                     }
                 }
             },
             "mint": {
                 "id": "c2t2",
-                "name": "Mint Hot Chocolate",
-                "description": "A refreshing twist with a hint of mint in classic hot chocolate",
-                "stars": 4,
+                "10-word-description": "Mint Hot Chockolate",
                 "pics": [
                     "https://cdn0.woolworths.media/content/wowproductimages/large/852937.jpg",
                     "https://images-na.ssl-images-amazon.com/images/I/71bb8XKGs7L._AC_UL600_SR600,600_.jpg",
                     "https://www.nashuanutrition.com/cdn/shop/products/healthsmart-protein-hot-chocolate-mint-7-servingsbox-5_1400x.jpg?v=1654527910"
                 ],
-                "reviews": [
-                    {
-                        "id": "c2t2r1",
-                        "name": "Charlie",
-                        "review": "The mint adds a delightful touch!"
-                    },
-                    {
-                        "id": "c2t2r2",
-                        "name": "Diana",
-                        "review": "So refreshing and delicious!"
-                    }
-                ],
-                "priceAndSize": {
-                    "small": {
-                        "id": "c2t2s1",
-                        "size": "125",
-                        "price": 45,
-                        "cups": "1 cup"
+                "shareLink": "",
+                "sub-types": {
+                    "light": {
+                        "id": "c2t2v1",
+                        "name": "Mint light",
+                        "description": "This is a Mint light chockolate it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c2t2v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c2t2v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t2v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t2v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t2v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
                     },
                     "medium": {
-                        "id": "c2t2s2",
-                        "size": "250",
-                        "price": 75,
-                        "cups": "2 cups"
+                        "id": "c2t2v2",
+                        "name": "Mint medium",
+                        "description": "This is a chockolate Mint medium so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c2t2v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c2t2v2r2",
+                                "name": "Anna",
+                                "review": "My go-to Mint every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t2v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t2v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t2v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
                     },
-                    "large": {
-                        "id": "c2t2s3",
-                        "size": "500",
-                        "price": 140,
-                        "cups": "4 cups"
+                    "dark": {
+                        "id": "c2t2v3",
+                        "name": "Mint dark",
+                        "description": "This is a Mint dark it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c2t2v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c2t2v3r2",
+                                "name": "Sophia",
+                                "review": "A dark lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t2v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t2v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t2v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c2t2v4",
+                        "name": "Mint extra dark",
+                        "description": "This is a chockolate extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c2t2v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c2t2v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t2v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t2v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t2v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
                     }
                 }
             },
             "spicy": {
                 "id": "c2t3",
-                "name": "Spicy Hot Chocolate",
-                "description": "A daring blend of chocolate with a kick of spice",
-                "stars": 4.2,
-                "pics": [
-                    "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/pumpkin-spice-84996.jpg",
-                    "https://smartassandsass.com/cdn/shop/files/wake-me-up-before-you-cocoa-hot-packet-2023-restock-feb-food-and-drink-gifts-under-15-25-the-spice-age-smartass-sass-164_480x480.jpg?v=1690574738",
-                    "https://www.swissmiss.com/sites/g/files/qyyrlu391/files/images/products/milk-chocolate-flavor-hot-81115.png"
-                ],
-                "reviews": [
-                    {
-                        "id": "c2t3r1",
-                        "name": "Ethan",
-                        "review": "Love the spicy twist, very unique!"
-                    },
-                    {
-                        "id": "c2t3r2",
-                        "name": "Fiona",
-                        "review": "It's like a chocolate adventure in a cup!"
-                    }
-                ],
-                "priceAndSize": {
-                    "small": {
-                        "id": "c2t3s1",
-                        "size": "125",
-                        "price": 50,
-                        "cups": "1 cup"
-                    },
-                    "medium": {
-                        "id": "c2t3s2",
-                        "size": "250",
-                        "price": 80,
-                        "cups": "2 cups"
-                    },
-                    "large": {
-                        "id": "c2t3s3",
-                        "size": "500",
-                        "price": 150,
-                        "cups": "4 cups"
-                    }
-                }
-            },
-            "white": {
-                "id": "c2t4",
-                "name": "White Hot Chocolate",
-                "description": "Creamy and sweet white chocolate for a delightful treat",
-                "stars": 4.8,
+                "10-word-description": "Spicy Hot Chocolate",
                 "pics": [
                     "https://cdn0.woolworths.media/content/wowproductimages/large/207980.jpg",
                     "https://www.kroger.com/product/images/large/right/0001111002519",
                     "https://shop.franck.eu/media/uploads/hotmix_kutija_hotchocolate_white.png"
                 ],
-                "reviews": [
-                    {
-                        "id": "c2t4r1",
-                        "name": "George",
-                        "review": "A wonderful creamy delight!"
-                    },
-                    {
-                        "id": "c2t4r2",
-                        "name": "Hannah",
-                        "review": "White chocolate perfection!"
-                    }
-                ],
-                "priceAndSize": {
-                    "small": {
-                        "id": "c2t4s1",
-                        "size": "125",
-                        "price": 40,
-                        "cups": "1 cup"
+                "shareLink": "",
+                "sub-types": {
+                    "light": {
+                        "id": "c2t3v1",
+                        "name": "Spicy light",
+                        "description": "This is a Spicy light chockolate it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c2t3v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c2t3v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t3v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t3v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t3v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
                     },
                     "medium": {
-                        "id": "c2t4s2",
-                        "size": "250",
-                        "price": 70,
-                        "cups": "2 cups"
+                        "id": "c2t3v2",
+                        "name": "Spicy medium",
+                        "description": "This is a chockolate Spicy so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c2t3v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c2t3v2r2",
+                                "name": "Anna",
+                                "review": "My go-to Spicy every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t3v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t3v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t3v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
                     },
-                    "large": {
-                        "id": "c2t4s3",
-                        "size": "500",
-                        "price": 130,
-                        "cups": "4 cups"
+                    "dark": {
+                        "id": "c2t3v3",
+                        "name": "Spicy dark",
+                        "description": "This is a Spicy dark it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c2t3v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c2t3v3r2",
+                                "name": "Sophia",
+                                "review": "A dark lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t3v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t3v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t3v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c2t3v4",
+                        "name": "Spicy extra dark",
+                        "description": "This is a chockolate Spicy extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c2t3v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c2t3v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t3v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t3v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t3v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
+                    }
+                }
+            },
+            "white": {
+                "id": "c2t4",
+                "10-word-description": "white Hot Chocolate",
+                "pics": [
+                    "https://cdn0.woolworths.media/content/wowproductimages/large/207980.jpg",
+                    "https://www.kroger.com/product/images/large/right/0001111002519",
+                    "https://shop.franck.eu/media/uploads/hotmix_kutija_hotchocolate_white.png"
+                ],
+                "shareLink": "",
+                "sub-types": {
+                    "light": {
+                        "id": "c2t4v1",
+                        "name": "white light",
+                        "description": "This is a white light chockolate it is very good",
+                        "stars": 4,
+                        "reviews": [
+                            {
+                                "id": "c2t4v1r1",
+                                "name": "John",
+                                "review": "This is an awesome coffee"
+                            },
+                            {
+                                "id": "c2t4v1r2",
+                                "name": "Emily",
+                                "review": "Loved the light flavor!"
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t4v1s1",
+                                "size": "125",
+                                "price": 50,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t4v1s2",
+                                "size": "250",
+                                "price": 90,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t4v1s3",
+                                "size": "500",
+                                "price": 150,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "medium": {
+                        "id": "c2t4v2",
+                        "name": "white medium",
+                        "description": "This is a chockolate white so it is very good",
+                        "stars": 5,
+                        "reviews": [
+                            {
+                                "id": "c2t4v2r1",
+                                "name": "Mike",
+                                "review": "Perfect balance of flavors!"
+                            },
+                            {
+                                "id": "c2t4v2r2",
+                                "name": "Anna",
+                                "review": "My go-to coffee every morning."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t4v2s1",
+                                "size": "125",
+                                "price": 55,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t4v2s2",
+                                "size": "250",
+                                "price": 95,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t4v2s3",
+                                "size": "500",
+                                "price": 160,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "dark": {
+                        "id": "c2t4v3",
+                        "name": "white dark",
+                        "description": "This is a coffee white and dark it is very good",
+                        "stars": 4.5,
+                        "reviews": [
+                            {
+                                "id": "c2t4v3r1",
+                                "name": "Lucas",
+                                "review": "Rich and robust flavor!"
+                            },
+                            {
+                                "id": "c2t4v3r2",
+                                "name": "Sophia",
+                                "review": "A dark lover's dream."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t4v3s1",
+                                "size": "125",
+                                "price": 60,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t4v3s2",
+                                "size": "250",
+                                "price": 100,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t4v3s3",
+                                "size": "500",
+                                "price": 170,
+                                "cups": "24 cups"
+                            }
+                        }
+                    },
+                    "extraDark": {
+                        "id": "c2t4v4",
+                        "name": "white extra dark",
+                        "description": "This is a chockolate white extra dark so it is very good",
+                        "stars": 3.5,
+                        "reviews": [
+                            {
+                                "id": "c2t4v4r1",
+                                "name": "Oliver",
+                                "review": "Intense and powerful flavor."
+                            },
+                            {
+                                "id": "c2t4v4r2",
+                                "name": "Emma",
+                                "review": "A bit too strong for my taste."
+                            }
+                        ],
+                        "priceAndSize": {
+                            "small": {
+                                "id": "c2t4v4s1",
+                                "size": "125",
+                                "price": 65,
+                                "cups": "6 cups"
+                            },
+                            "medium": {
+                                "id": "c2t4v4s2",
+                                "size": "250",
+                                "price": 105,
+                                "cups": "12 cups"
+                            },
+                            "large": {
+                                "id": "c2t4v4s3",
+                                "size": "500",
+                                "price": 180,
+                                "cups": "24 cups"
+                            }
+                        }
                     }
                 }
             }
-        }
+
+    }
     }
 }

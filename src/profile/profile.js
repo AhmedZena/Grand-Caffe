@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   userEmail.innerHTML = user.email;
   userAvatar.src =
     user.avatarImage ||
-    "http://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64?s=200";
+    "https://gravatar.com/avatar/288ce55a011c709f4e17aef7e3c86c64";
   userBgHome.src =
     user.bgImage ||
     "https://37.media.tumblr.com/88cbce9265c55a70a753beb0d6ecc2cd/tumblr_n8gxzn78qH1st5lhmo1_1280.jpg";
@@ -100,7 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
       })
     : (totalPrice = 0);
 
-  userProductsHtml += `
+  user.prouctsBuyed
+    ? (userProductsHtml += `
       <div class="user-product">
 
       <div class="user-product-info">
@@ -110,7 +111,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
       </div>
       </div>
-      `;
+      `)
+    : (userProductsHtml += ``);
 
   userProducts.innerHTML = userProductsHtml;
 });

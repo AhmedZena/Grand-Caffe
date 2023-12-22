@@ -1,5 +1,35 @@
+// create that elements   
+{/* <div class="shopping " id="shopping"> */}
+    //     <h3> Shopping cards</h3>
+    //     <button id="close">
+    //         <i class="fa fa-times"></i>
+    //     </button>
+
+
+    //     <div id="details" class="details">
+
+
+    //     </div>
+
+    // </div>
+
+
+    let shopping = document.createElement("div");
+    shopping.id = "shopping";
+    shopping.className = "shopping";
+    shopping.innerHTML = `<h3 class="shoppingHeader">  Shopping cards</h3> <button id="close">x</button>`;
+
+    let details = document.createElement("div");
+    details.className = "details";
+    details.id = "details";
+    shopping.appendChild(details);
+
+    document.body.appendChild(shopping);
+
+
+
 // // const addTo = document.getElementById("addTo");
-const shopping = document.getElementById("shopping");
+// const shopping = document.getElementById("shopping");
 // let details = document.getElementsByClassName("details");
 let close = document.getElementById("close");
 var newEle;
@@ -57,7 +87,7 @@ function sidebar(numPro) {
   shopping.appendChild(newEle);
 
   newEle = document.createElement("img");
-  newEle.src = dataFromlocal.pics[2];
+  newEle.src = dataFromlocal.pics[1];
   newEle.classList.add("imageCard");
   document.getElementsByClassName(`pro${numPro}`)[0].appendChild(newEle);
 
@@ -111,7 +141,7 @@ shopping.addEventListener("click", function (event) {
   if (event.target.id == "close") {
     console.log("clicked");
     shopping.classList.remove("openSide");
-    container.classList.remove("openSide");
+    // container.classList.remove("openSide");
   } else if (event.target.classList.contains("plus")) {
     totalPrice();
     // Retrieve the array from local storage

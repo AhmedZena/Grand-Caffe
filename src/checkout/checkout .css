@@ -8,6 +8,150 @@
   --second-color: #eee8aa;
   --third-color: #f4d61c;
 }
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  height: 80px;
+}
+.nav .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .header h1 {
+  margin-left: 10px;
+  color: var(--third-color);
+}
+.nav .categories {
+  list-style: none;
+  display: flex;
+  font-size: 25px;
+  color: var(--second-color);
+}
+@media (max-width: 667px) {
+  .nav .categories {
+    display: none;
+  }
+}
+
+.nav .categories li a {
+  margin: 0px 10px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: var(--second-color);
+  font-style: italic;
+  font-size: 25px;
+  transition: 0.8s;
+}
+.nav .categories li a:hover {
+  background-color: var(--third-color);
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
+
+.nav .logo {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.nav .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .icons i {
+  margin: 0px 10px;
+  color: var(--second-color);
+}
+
+/* footer */
+footer {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 667px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer .icons {
+  display: flex;
+  margin-top: 10px;
+}
+.footer h3 {
+  color: var(--third-color);
+  font-size: 25px;
+}
+.footer span {
+  margin: 10px 10px;
+}
+
+.list,
+.icons {
+  list-style: none;
+  color: aliceblue;
+}
+.footer .help .list li,
+.footer .shop .list li,
+.footer .Contact .icons li {
+  margin-top: 10px;
+  color: aliceblue;
+}
+.footer .help .list li i,
+.footer .shop .list li i,
+.footer .Contact .icons li i {
+  margin-left: 10px;
+  color: var(--third-color);
+}
+.footer .help .list a,
+.footer .shop .list a {
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: var(--second-color);
+}
+@keyframes draw-left-to-right {
+  from {
+    width: 0;
+    left: 0;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.footer .help .list a::before,
+.footer .shop .list a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--third-color);
+  visibility: hidden;
+}
+.footer .help .list a:hover:before,
+.footer .shop .list a:hover::before {
+  visibility: visible;
+  animation: draw-left-to-right 1s ease-in-out;
+}
+
 .parent {
   /* height: 100vh; */
   margin-bottom: 20px;

@@ -7,6 +7,7 @@
         <link rel="icon" href="/assets/pics/home/logo.jpg" type="image/x-icon">
         <title>Document</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+        <link rel="stylesheet" href="../../assets/sharedStyles/styles.css">
         <link rel="stylesheet" href="search.css">
     </head>
     <body>
@@ -26,8 +27,8 @@
                 <a href="/src/search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- search -->
                 <a href="/src/loginReg/loginReg.html" id="loginRegProfileIcon"><i
                         class="fa-regular fa-user"></i></a> <!-- user -->
-                <a href="#"><i class="fa-regular fa-star"></i></a> <!-- fav -->
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> <!-- cart -->
+                        <a href="../admin/dashboard.html"  class="admin"><i class="fas fa-user-cog "></i></a> <!-- cart -->
+                        <a href="#" onclick="getData()"><i class="fa-solid fa-cart-shopping"></i></a> <!-- cart -->
 
             </div>
           
@@ -86,6 +87,9 @@
 
 
         <script src="search.js"></script>
+        <script src="../side/side.js"></script>
+
+        <script src="../../assets/sharedScript/main.js"></script>
 
     </body>
 

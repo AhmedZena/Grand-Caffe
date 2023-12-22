@@ -20,8 +20,12 @@ let xhReq = new XMLHttpRequest();
 // xhReq.open("GET", "../data/categories.json", false);
 xhReq.open("GET", "../../../assets/data/categories.json", false);
 xhReq.send(null);
-let productsTypes = JSON.parse(xhReq.responseText).coffee.types;
 
+
+let productsTypes1 = JSON.parse(xhReq.responseText).coffee.types;
+let productsTypes2 = JSON.parse(xhReq.responseText).HotChocklate.types;
+
+let productsTypes ={...productsTypes1, ...productsTypes2};
 console.log(productsTypes);
 
 // get the product id from the local storage
@@ -196,7 +200,7 @@ for (productName in productsTypes) {
                 cups: productSubTypes[radioValue].priceAndSize[lastproduct]
                   .cups,
                 pics: productsTypes[productName].pics,
-                name: productName + " " + radioValue + " " + lastproduct,
+                name: title.innerHTML + " " + radioValue + " " + lastproduct,
               });
 
               let cartItems = localStorage.getItem("productsInCart")
@@ -224,8 +228,8 @@ for (productName in productsTypes) {
                     productSubTypes[radioValue].priceAndSize[lastproduct].price,
                   cups: productSubTypes[radioValue].priceAndSize[lastproduct]
                     .cups,
-                  pics: productsTypes[productName].pics,
-                  name: productName + " " + radioValue + " " + lastproduct,
+                  pics: productsTypes[title.innerHTML].pics,
+                  name: title.innerHTML + " " + radioValue + " " + lastproduct,
                   chosnNumber: 1,
                 });
                 // console.log(cartItems);
