@@ -30,11 +30,11 @@
 	font-family: "lora", sans-serif;
 }
 
-body {
+/* body {
 	display: flex;
 	justify-content: center;
 	min-height: 100vh;
-}
+} */
 
 section {
 	display: flex;

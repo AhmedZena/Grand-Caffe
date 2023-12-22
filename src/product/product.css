@@ -1,5 +1,5 @@
 :root {
-  --primary: #ff5521;
+  --primary: #515d22;
 }
 
 * {
@@ -8,12 +8,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-body {
-  background-color: #efefef;
+:root {
+  --main-color: #515d22;
+  --second-color: #eee8aa;
+  --third-color: #f4d61c;
 }
 
-.container {
+body {
+  background-color: var(--second-color);
+}
+
+.parent {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -74,12 +79,12 @@ body {
   z-index: -1;
 }
 
-.gradient[color="blue"] {
-  background-image: linear-gradient(45deg, #0136af, #22abfa);
+.gradient[color="red"] {
+  background-image: linear-gradient(45deg, #f4d61c, #eee8aa);
 }
 
-.gradient[color="red"] {
-  background-image: linear-gradient(45deg, #d62926, #ee625f);
+.gradient[color="blue"] {
+  background-image: linear-gradient(45deg, #515d22, #eee8aa);
 }
 
 .gradient[color="green"] {
@@ -87,14 +92,18 @@ body {
 }
 
 .gradient[color="orange"] {
-  background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+  background-image: linear-gradient(
+    45deg,
+    var(--main-color),
+    var(--third-color)
+  );
 }
 
 .gradient[color="black"] {
   background-image: linear-gradient(45deg, #111, #666);
 }
 
-.logo {
+.parent .logo {
   position: absolute;
   width: 100px;
   left: 20px;
@@ -240,13 +249,13 @@ body {
 }
 
 .color[color="blue"] {
-  background-color: #2175f5;
-  border-color: #2175f5;
+  background-color: #f4d61c;
+  border-color: #eee8aa;
 }
 
 .color[color="red"] {
-  background-color: #f84848;
-  border-color: #f84848;
+  background-color: #eee8aa;
+  border-color: #eee8aa;
 }
 
 .color[color="green"] {
@@ -255,8 +264,8 @@ body {
 }
 
 .color[color="orange"] {
-  background-color: #ff5521;
-  border-color: #ff5521;
+  background-color: #515d22;
+  border-color: #515d22;
 }
 
 .color[color="black"] {
@@ -525,7 +534,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ff5521;
+  background: #515d22;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -554,7 +563,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #ff5521;
+  background: #515d22;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -571,7 +580,7 @@ body {
 
 .copyLinkLabel:hover {
   cursor: pointer;
-  color: #ff5521;
+  color: #515d22;
 }
 
 .popup .popupInside .close-btn {
@@ -581,7 +590,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #ff5521;
+  background: #515d22;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -607,7 +616,7 @@ body {
 }
 
 #isLinkCopied {
-  color: brown;
+  color: #f4d61c;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -651,7 +660,7 @@ body {
 }
 
 .popupShowAddedToLocalStorge .popUpInfo i {
-  color: #ff523b;
+  color: #515d22;
   font-size: 3rem;
 }
 

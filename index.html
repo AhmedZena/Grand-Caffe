@@ -18,17 +18,13 @@
                     <img src="/assets/pics/home/logo.jpg" alt="" class="logo">
                     <h1>Grand Caffe</h1>
                 </div>
-                <ul>
+                <ul class="categories">
                     <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
                     <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
                     <li><a href="#offers">Offers</a></li>
                     <li><a href="#">Accessories</a></li>
                 </ul>
                 <div class="icons">
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> search -->
-                    <!-- <i class="fa-regular fa-user"></i> user -->
-                    <!-- <i class="fa-regular fa-star"></i> fav -->
-                    <!-- <i class="fa-solid fa-cart-shopping"></i> cart -->
                     <a href="/src/search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- search -->
                     <a href="/src/loginReg/loginReg.html" id="loginRegProfileIcon"><i
                             class="fa-regular fa-user"></i></a> <!-- user -->
@@ -36,34 +32,63 @@
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> <!-- cart -->
 
                 </div>
+              
 
             </div>
-            <div class="image">
+            <div class="ads">
+                <i class="fas fa-angle-left change-background fa-2x"></i>
                 <img src="/assets/pics/home/background2.jpg" alt="" id="image">
+            <i class="fas fa-angle-right change-background fa-2x"></i>
             </div>
             <div class="cards" id="offers">
-                <h2>Big Offers</h2>
+                <h2 class="main-heading">Big Offers</h2>
                 <div id="coffee-container"></div>
             </div>
-            <h2> About Us</h2>
+            <section class="coffe">
+                <h2 class="main-heading">Coffe</h2>
+                <div class="coffe-cateogory">
+
+                </div>
+                <div class="show"><a href="/src/categories/coffee/coffee.html">Show More</a></div>
+            </section>
+            <section class="hotchoclate">
+                <h2 class="main-heading">Hot Choclate</h2>
+                <div class="hotchoclate-cateogory">
+
+                </div>
+                <div class="show"><a href="/src/categories/hot_choclat/hot.html">Show More</a></div>
+            </section>
+            <h2 class="main-heading"> About Us</h2>
             <div class="story">
-
-                <img src="/assets/pics/home/storyimage.jpg" alt="" id="photo">
-
+                <div class="photo">
+                    <img src="/assets/pics/home/aboutus.jpg" alt="" id="photo">
+                </div>
                 <div class="content">
-                    <h3>our story</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quaerat recusandae minus, voluptatum consequatur voluptatibus adipisci
-                        deleniti rem ipsa quas qui aliquam mollitia numquam atque explicabo corrupti,
-                        dolores alias obcaecati ea?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam a sequi sunt temporibus,
-                        quis doloremque at quae facere ratione dolore accusantium expedita tempore earum ab veniam
-                        enim voluptatibus? Sequi, omnis!</p>
+                    <p>Welcome to GrandCoffee Cafe,
+                         where every sip tells a story and every moment is an experience.
+                          Nestled in the heart of [City/Town], our cafe is a haven for coffee
+                           enthusiasts and those seeking a warm, inviting atmosphere.
+
+        
+                        At GrandCoffee, we believe in more than just serving coffee; 
+                        we craft an environment that blends the rich tradition of coffee
+                         with modern comforts. Our passionate baristas are dedicated to creating 
+                         the perfect cup, ensuring each visit leaves you with a taste of excellence.</p>
                     <a href="#">read more</a>
                 </div>
             </div>
+            <section class="reviews">
+                <h2 class="main-heading">Our Customers Reviews</h2>
+                <div class="contain">
+                    <i class="fas fa-angle-left change-background fa-2x"></i>
+                <div class="reviews-container">
+                </div>
+                <i class="fas fa-angle-right change-background fa-2x"></i>
+                </div>
+                
+            </section>
             <section id="services">
-                <h2 style="color:black;text-align: center;font-size: 35px;">Services</h2>
+                <h2 class="main-heading">Services</h2>
                 <div class="services">
                     <div class="serv">
                         <i class="fa-solid fa-van-shuttle"></i>
@@ -93,7 +118,7 @@
                 <div class="footer">
                     <div class="help">
                         <h3>Grand cafee help</h3>
-                        <ul>
+                        <ul class="list">
                             <li><a href="">search</a></li>
                             <li><a href="">about us </a></li>
                             <li><a href=""> contact us</a></li>
@@ -104,12 +129,7 @@
                     </div>
                     <div class="shop">
                         <h3>Grand Shop</h3>
-                        <ul>
-                            <!-- <li><a href="">Home</a></li>
-                            <li><a href="">Coffe </a></li>
-                            <li><a href=""> Hot Choclate</a></li>
-                            <li><a href="">Accessories</a></li>
-                            <li><a href="">Offers </a></li> -->
+                        <ul class="list">
                             <li><a href="#">Home</a></li>
                             <li><a href="/src/categories/coffee/coffee.html">Coffe </a></li>
                             <li><a href="/src/categories/hot_choclat/hot.html"> Hot Choclate</a></li>
@@ -120,7 +140,7 @@
                     </div>
                     <div class="Contact">
                         <h3>Contact Us</h3>
-                        <ul>
+                        <ul class="list">
                             <li><i class="fa-solid fa-phone"></i><span>01043784319</span></li>
                             <li><i class="fa-solid fa-envelope"></i><span>grandcaffe@gmail.com</span></li>
                         </ul>

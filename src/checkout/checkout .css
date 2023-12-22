@@ -3,26 +3,47 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --main-color:#515d22;
+  --second-color:#eee8aa;
+  --third-color:#f4d61c;
+}
+.parent{
+  /* height: 100vh; */
+  margin-bottom: 20px;
+  background-color: var(--second-color);
+}
 
 .shoppingcards {
-  position: absolute;
+  position: relative;
   top: -0px;
-  left: 5%;
+  /* left: 5%; */
   width: 99%;
   min-height: 100%;
   height: auto;
   padding: 1%;
   padding-bottom: 10vh;
+  /* border: 1px solid var(--main-color); */
+ 
 }
+.head{
+  /* position: absolute; */
+  top:15%;
+  text-align: center;
+  font-size: 25px;
+  color:var(--main-color); 
 
+  
+}
 .imageCard {
   position: absolute;
   left: 0.6vw;
   width: 15%;
+  /* border: 1px solid var(--main-color); */
 }
 .cardPro {
   position: absolute;
-  height: auto;
+  /* height: auto; */
   bottom: 0;
   width: 100%;
 }
@@ -68,20 +89,20 @@ input {
 }
 
 .sum {
-  position: absolute;
-  left: -1vw;
-  bottom: 9vh;
+  /* position: absolute; */
+  /* left: -1vw; */
+  /* bottom: 9vh; */
   text-align: center;
-  padding-bottom: 3%;
-  padding-top: 10vh;
-  width: 100%;
-  height: 20vh;
-  margin-right: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:20px;
+font-size: 25px;
+
+  margin-bottom: 10px;
+  
 }
 
-.sum h4 {
-  display: inline-block;
-}
 
 .checkOut {
   width: 85%;
@@ -90,19 +111,7 @@ input {
   margin-top: 10%;
 }
 
-.tot {
-  position: absolute;
-  right: 0;
 
-  margin-right: 9%;
-}
-
-.subTotal {
-  position: absolute;
-  top: 10vh;
-  left: 0;
-  margin-left: 5%;
-}
 
 hr {
   width: 90%;
@@ -111,11 +120,28 @@ hr {
 }
 
 #checkoutAndBuy {
-  position: absolute;
-  bottom: 1%;
-  left: 5%;
-  width: 90%;
+  width: 30%;
+  margin:0  auto;
   padding: 0.5%;
   text-align: center;
   margin: auto;
+  font-size: 25px;
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--second-color);
+  transition: .5s;
+  border-radius: 15px;
+}
+.buy-button{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+#checkoutAndBuy:hover{
+   background-color: var(--third-color);
+   color: var(--main-color);
+   transform: scale(1.2);
+   
+  /* color: var(--third-color); */
 }

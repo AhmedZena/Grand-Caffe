@@ -4,21 +4,47 @@ const shopping = document.getElementById("shopping");
 let close = document.getElementById("close");
 var newEle;
 // var numPro = 0;
-
-// console.log(JSON.parse(localStorage.productsInCart)[numPro]);
-
 let dataFromlocal;
 
 function getData() {
-  shopping.innerHTML = `<h3> Shopping cards</h3> <button id="close">x</button>`;
+  shopping.innerHTML = `<h3 class="shoppingHeader">  Shopping cards</h3> <button id="close">x</button>`;
 
   close = document.getElementById("close");
   for (let i = 0; i < JSON.parse(localStorage.productsInCart).length; i++) {
     sidebar(i);
+    if (i == JSON.parse(localStorage.productsInCart).length - 1) {
+      console.log("last");
+      newEle = document.createElement("div");
+      newEle.className = "cardPro";
+      newEle.id = "cardPro";
+      shopping.appendChild(newEle);
+
+      newEle = document.createElement("div");
+      newEle.className = "sum";
+      newEle.id = "sum";
+      document.getElementsByClassName("cardPro")[0].appendChild(newEle);
+
+      newEle = document.createElement("span");
+      newEle.className = "subTotal";
+      newEle.innerHTML = "Total: ";
+      document.getElementsByClassName("sum")[0].appendChild(newEle);
+
+      newEle = document.createElement("span");
+      newEle.className = "total";
+      newEle.id = "total";
+
+      document.getElementById("sum").appendChild(newEle);
+
+      newEle = document.createElement("button");
+      newEle.className = "checkOut";
+      newEle.id = "checkOut";
+      newEle.innerHTML = `checkOut`;
+      document.getElementById("sum").appendChild(newEle);
+      totalPrice();
+    }
   }
 }
 
-// getData();
 // function sidebar() {
 function sidebar(numPro) {
   dataFromlocal = JSON.parse(localStorage.productsInCart)[numPro];
@@ -77,43 +103,6 @@ function sidebar(numPro) {
   document.getElementsByClassName(`pro${numPro}`)[0].appendChild(newEle);
 
   numPro++;
-
-  console.log(numPro);
-  if (numPro == 1) {
-    newEle = document.createElement("div");
-    newEle.className = "cardPro";
-    newEle.id = "cardPro";
-    shopping.appendChild(newEle);
-
-    newEle = document.createElement("div");
-    newEle.className = "sum";
-    newEle.id = "sum";
-    document.getElementsByClassName("cardPro")[0].appendChild(newEle);
-
-    newEle = document.createElement("h4");
-    newEle.className = "subTotal";
-    newEle.innerHTML = "sub total";
-    document.getElementsByClassName("sum")[0].appendChild(newEle);
-
-    newEle = document.createElement("h4");
-    newEle.className = "total";
-    newEle.id = "total";
-
-    document.getElementById("sum").appendChild(newEle);
-
-    newEle = document.createElement("button");
-    newEle.className = "checkOut";
-    newEle.id = "checkOut";
-    newEle.innerHTML = `checkOut`;
-    document.getElementById("sum").appendChild(newEle);
-
-    newEle = document.createElement("button");
-    newEle.className = "cards ";
-    newEle.id = "cards";
-    newEle.innerHTML = `view cards`;
-    document.getElementById("sum").appendChild(newEle);
-  }
-  totalPrice();
 }
 
 shopping.addEventListener("click", function (event) {
@@ -124,6 +113,7 @@ shopping.addEventListener("click", function (event) {
     shopping.classList.remove("openSide");
     container.classList.remove("openSide");
   } else if (event.target.classList.contains("plus")) {
+    totalPrice();
     // Retrieve the array from local storage
     let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || [];
 
@@ -132,36 +122,45 @@ shopping.addEventListener("click", function (event) {
         cartItems[i].chosnNumber++;
       }
     }
+
     // Store the modified array back in local storage
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
     getData();
-    totalPrice();
   } else if (event.target.classList.contains("mins")) {
-    let countElement = event.target.parentElement.querySelector(".count");
-    console.log(countElement);
+    totalPrice();
 
     // Retrieve the array from local storage
     let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || [];
 
     for (let i = 0; i < cartItems.length; i++) {
       if (cartItems[i].id == event.target.parentElement.id) {
-        if (cartItems[i].chosnNumber > 1) {
-          cartItems[i].chosnNumber--;
-        } else {
-          cartItems.splice(i, 1);
-        }
+        cartItems[i].chosnNumber--;
       }
     }
 
     // Store the modified array back in local storage
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+    // totalPrice();
     getData();
-    totalPrice();
 
-    // Ensure count is not negative
+    // check if the number of the product is 0
+    if (event.target.parentElement.querySelector(".count").value <= 1) {
+      event.target.parentElement.remove();
+
+      // Retrieve the array from local storage
+      let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || [];
+
+      for (let i = 0; i < cartItems.length; i++) {
+        if (cartItems[i].id == event.target.parentElement.id) {
+          cartItems.splice(i, 1);
+        }
+      }
+
+      // Store the modified array back in local storage
+      localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+      getData();
+    }
   } else if (event.target.classList.contains("remove")) {
-    // event.target.parentElement.remove();
-
     // Retrieve the array from local storage
     let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || [];
 
@@ -201,11 +200,9 @@ function totalPrice() {
   }
   console.log(sumPrice);
   document.getElementsByClassName("total")[0].innerHTML = `${sumPrice} E.L`;
-  localStorage.setItem("total", sumPrice);
   return sumPrice;
 }
 
 function check() {
   location.href = "../checkout/checkout.html";
-  //   window.open("../checkout/checkout.html");
 }

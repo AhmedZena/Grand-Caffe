@@ -4,8 +4,13 @@
 * Art by @jofpin 
 * 2014
 */
+:root {
+  --main-color: #515d22;
+  --second-color: #eee8aa;
+  --third-color: #f4d61c;
+}
 body {
-  background: #f8f5f0;
+  background: var(--second-color);
   font-family: "Open sans", sans-serif;
 }
 a {
@@ -15,10 +20,11 @@ a {
 .content-profile-page {
   margin: 1em auto;
   width: 44.23em;
+  padding: 10px;
 }
 
 .card {
-  background: #fff;
+  background: var(--second-color);
   border-radius: 0.3rem;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   border: 0.1em solid rgba(0, 0, 0, 0.2);
@@ -30,7 +36,7 @@ a {
   text-align: center;
 }
 .profile-bgHome {
-  border-bottom: 0.2em solid #f5f5f5;
+  border-bottom: 0.2em solid var(--second-color);
   width: 44.23em;
   height: 16em;
 }
@@ -42,7 +48,7 @@ a {
 }
 .avatar {
   margin: 0 auto;
-  background: #fff;
+  background: var(--second-color);
   width: 7em;
   height: 7em;
   padding: 0.25em;
@@ -64,8 +70,8 @@ a {
   font-weight: bold;
   cursor: pointer;
   width: 7em;
-  background: #3498db;
-  border: 1px solid #2487c9;
+  background: var(--main-color);
+  border: 1px solid var(--third-color);
   color: #fff;
   outline: none;
   border-radius: 0 0.6em 0.6em 0;
@@ -73,9 +79,9 @@ a {
 }
 
 .btn-log-out:hover {
-  background: #51a7e0;
+  background: var(--main-color);
   transition: background 0.2s ease-in-out;
-  border: 1px solid #2487c9;
+  border: 1px solid var(--main-color);
 }
 
 .profile-user-page .user-profile-data {
@@ -121,6 +127,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   gap: 20px;
 }
 
@@ -130,8 +137,8 @@ a {
 .change-password-btn {
   width: 200px;
   height: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  /* background-color: var(--second-color); */
+  border: 1px solid var(--main-color);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -140,7 +147,7 @@ a {
 .edit-userBalance-btn:hover,
 .edit-moreInfo-btn:hover,
 .change-password-btn:hover {
-  background-color: #ccc;
+  background-color: var(--third-color);
 }
 
 .edit-userBalance {
@@ -148,7 +155,7 @@ a {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   padding: 20px;
 }
@@ -156,15 +163,15 @@ a {
 .edit-userBalance input[type="submit"] {
   width: 100%;
   height: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
 }
 
 .edit-userBalance input[type="submit"]:hover {
-  background-color: #ccc;
+  background-color: var(--third-color);
 }
 
 .edit-profile {
@@ -172,9 +179,10 @@ a {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--main-color);
   border-radius: 5px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .user-info {
@@ -196,7 +204,7 @@ a {
 .user-info input {
   width: 100%;
   height: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   padding: 0 10px;
 }
@@ -206,21 +214,21 @@ a {
 }
 
 .user-info input::placeholder {
-  color: #ccc;
+  color: black;
 }
 
 .edit-profile input[type="submit"] {
   width: 100%;
   height: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  /* background-color: var(--second-color); */
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
 }
 
 .edit-profile input[type="submit"]:hover {
-  background-color: #ccc;
+  background-color: var(--main-color);
 }
 
 .edit-moreInfo {
@@ -228,7 +236,7 @@ a {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   padding: 20px;
 }
@@ -236,15 +244,15 @@ a {
 .edit-moreInfo input[type="submit"] {
   width: 100%;
   height: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
 }
 
 .edit-moreInfo input[type="submit"]:hover {
-  background-color: #ccc;
+  background-color: var(--third-color);
 }
 
 .change-password {
@@ -252,7 +260,7 @@ a {
   width: 70%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   padding: 20px;
 }
@@ -260,21 +268,21 @@ a {
 .change-password input[type="submit"] {
   width: 100%;
   height: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
 }
 
 .change-password input[type="submit"]:hover {
-  background-color: #ccc;
+  background-color: var(--third-color);
 }
 
 .change-password input[type="password"] {
   width: 100%;
   height: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--second-color);
   border-radius: 5px;
   padding: 0 10px;
   margin-bottom: 10px;
@@ -286,4 +294,12 @@ a {
 
 .change-password input[type="password"]::placeholder {
   color: #ccc;
+}
+
+.error-oldPassword,
+.error-newPassword,
+.error-confirmPassword,
+.error-pass {
+  color: red;
+  font-size: 12px;
 }

@@ -1,3 +1,15 @@
+let loginRegProfile = document.getElementById("loginRegProfileIcon");
+
+if (localStorage.getItem("logedUserId")) {
+ 
+  loginRegProfile.href = "/src/profile/profile.html";
+  loginRegProfile.innerHTML = `<i class="fa-regular fa-user"></i>`;
+} else {
+  loginRegProfile.href = "/src/loginReg/loginReg.html";
+  loginRegProfile.innerHTML = `<i class="fa-solid fa-right-to-bracket"></i>`;
+}
+
+
 const mostPopPorducts = document.querySelector(".most-popular-products");
 
 const jsonFile = "/assets/data/simpleHotChock.json";

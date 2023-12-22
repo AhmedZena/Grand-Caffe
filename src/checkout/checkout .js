@@ -10,7 +10,7 @@ var numProd = 0;
 // let user = users.find((user) => user.id == logedUserId);
 // console.log(user);
 function fetchData() {
-  shoppingcards.innerHTML = `<h3> Shopping cards</h3> `;
+  shoppingcards.innerHTML = `<h3 class='head'> Shopping cards</h3> `;
 
   for (let i = 0; i < JSON.parse(localStorage.productsInCart).length; i++) {
     createPrudects(i);
@@ -89,7 +89,7 @@ function createPrudects(numProd) {
 
     newEl = document.createElement("h4");
     newEl.className = "subTotal";
-    newEl.innerHTML = "sub total";
+    newEl.innerHTML = "Total :";
     document.getElementsByClassName("sum")[0].appendChild(newEl);
 
     newEl = document.createElement("h4");

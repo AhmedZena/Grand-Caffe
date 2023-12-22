@@ -1,3 +1,13 @@
+let loginRegProfile = document.getElementById("loginRegProfileIcon");
+
+if (localStorage.getItem("logedUserId")) {
+  loginRegProfile.href = "/src/profile/profile.html";
+  loginRegProfile.innerHTML = `<i class="fa-regular fa-user"></i>`;
+} else {
+  loginRegProfile.href = "/src/loginReg/loginReg.html";
+  loginRegProfile.innerHTML = `<i class="fa-solid fa-right-to-bracket"></i>`;
+}
+
 let userName = document.getElementsByClassName("user-name")[0];
 let userEmail = document.getElementsByClassName("user-email")[0];
 let userAvatar = document.getElementsByClassName("avatar")[0];
@@ -103,34 +113,6 @@ function editUserPics(event) {
   window.location.reload();
 }
 
-// change password
-/*
-  <!-- change password in form separate -->
-           <form onsubmit="changePassword(event)" class="change-password">
-
-            <div class="user-info">
-                <label for="formOldPassword"> <i class="fas fa-lock"></i>Old Password: </label>
-                <input type="password" name="oldPassword" id="formOldPassword" placeholder="old password">
-                <span class="error-oldPassword"></span>
-            </div>
-
-            <div class="user-info">
-                <label for="formNewPassword"> <i class="fas fa-lock"></i>New Password: </label>
-                <input type="password" name="newPassword" id="formNewPassword" placeholder="new password">
-                    <span class="error-newPassword"></span>
-            </div>
-
-            <div class="user-info">
-                <label for="formConfirmPassword"> <i class="fas fa-lock"></i>Confirm Password: </label>
-                <input type="password" name="confirmPassword" id="formConfirmPassword" placeholder="confirm password">
-                    <span class="error-confirmPassword"></span>
-            </div>
-            <span class="error-pass"></span>
-            <input type="submit" value="save">
-        </form>
-
-
-*/
 function changePassword(event) {
   event.preventDefault();
   let users = JSON.parse(localStorage.getItem("users"));

@@ -51,12 +51,18 @@ function register(e) {
   // i want to save unique id with user
 
   let id = Math.floor(Math.random() * 1000000000);
+  let joinDate = new Date();
+  // only time and date as format 09/09/2021 12:00 AM
+  joinDate = joinDate.toLocaleString();
 
   let user = {
     id: id,
     name: registerName.value,
     email: registerEmail.value,
     password: registerPassword.value,
+    joinDate: joinDate,
+    role: "user",
+    balance: 0,
   };
 
   let users = JSON.parse(localStorage.getItem("users"));

@@ -6,45 +6,57 @@
 
 .shopping {
   position: absolute;
-  top: -0px;
-  left: -30vw;
-  background-color: black;
-  color: #fff;
-  width: 25%;
-  min-height: 140vh;
-  height: auto;
+  top: 80px;
+  left: -60vw;
+  background-color: #eee8aa;
+  color: #515d22;
+  width: 35%;
+  /* height: 850px; */
+  height: 100vh;
   z-index: 100;
   padding: 1%;
   padding-bottom: 10vh;
+  overflow: auto;
+  border-radius: 10px;
+  border: 5px solid #515d22;
+}
+.shoppingHeader {
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #515d22;
+}
+.cardPro {
+  /* position: absolute; */
+  height: auto;
+  bottom: 0;
 }
 
-.cardPro {
-  position: absolute;
-  height: auto;
-  bottom: 0;
-}
-/* .pro{
-  
-  position: absolute;
-  height: auto;
-  bottom: 0;
-  
-} */
 .openSide {
-  transform: translateX(30vw);
-  transition: 1.5s ease-in;
+  transform: translateX(60vw);
+  transition: 2s ease-in;
 }
 
 #close {
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2em;
+  background-color: #515d22;
+  color: #eee8aa;
+  border: none;
+  border-radius: 50%;
+  /* padding: 0.5%; */
 }
 
 .imageCard {
   position: absolute;
-  left: 0.6vw;
+  left: 0.1vw;
   width: 30%;
+  z-index: -5;
 }
 
 .details {
@@ -52,12 +64,12 @@
   position: static;
   line-height: 0.2em;
   margin-left: 8vw;
-  margin-bottom: 7vh;
+  margin-bottom: 50px;
 }
 
 .namePro {
   margin-top: 1%;
-  margin-bottom: 9%;
+  /* margin-bottom: 9%; */
 }
 .pricePro,
 .sizee {
@@ -75,63 +87,96 @@ input {
   background-color: rgba(255, 13, 13, 0);
   text-decoration: underline;
   border: none;
-  color: #fff;
+  color: #515d22;
 }
 
 .remove:hover,
 .cards:hover {
-  color: blue;
+  color: #e60000;
+  cursor: pointer;
 }
 
 .sum {
-  position: absolute;
-  left: -1vw;
-  bottom: 9vh;
-  z-index: -1;
+  /* position: absolute; */
+  /* left: -1vw; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* z-index: 0; */
   text-align: center;
   padding-bottom: 3%;
   padding-top: 10vh;
-  width: 25vw;
-  height: 20vh;
+  width: 100%;
+  height: 100%;
   margin-right: 10%;
 }
 
-.sum h4 {
-  display: inline-block;
+.sum span:nth-child(1) {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #515d22;
+  margin-right: 2px;
 }
-
+.sum span:nth-child(2) {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #515d22;
+  margin-right: 2px;
+}
 .checkOut {
-  width: 85%;
+  width: 75%;
   padding: 2% 0;
-  margin-bottom: 1.5%;
+  font-size: 1.1em;
+  font-weight: 600;
   margin-top: 10%;
+  background-color: #515d22;
+  color: #eee8aa;
+  transition: 0.5s ease-in;
 }
 
-.total {
+.checkOut:hover {
+  width: 85%;
+  background-color: #eee8aa;
+  color: #515d22;
+  border: 2px solid #515d22;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/* .total {
   position: absolute;
   right: 0;
-
   margin-right: 9%;
-}
-
-.subTotal {
-  position: absolute;
-  top: 10vh;
-  left: 0;
-  margin-left: 5%;
-}
+} */
 
 hr {
-  margin-top: 3vh;
+  margin-top: 30px;
   margin-bottom: 2vh;
   width: 90%;
   left: 5%;
   position: absolute;
+  background-color: #515d22;
+  color: #515d22;
+  height: 3px;
 }
 
-/* @media screen and (max-width: 720px) {
-  .shopping{
-    width: 50%
-  }
-  
-} */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5c5c5c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5c5c5c;
+}

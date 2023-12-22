@@ -4,14 +4,87 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/assets/pics/home/logo.jpg" type="image/x-icon">
         <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+        <link rel="stylesheet" href="search.css">
     </head>
-
     <body>
+        <div class="nav">
+            <div class="header">
+                <a href="../../index.html" class="logo"> <img src="/assets/pics/home/logo.jpg" alt="" class="logo"></a>
+                <h1>Grand Caffe</h1>
+            </div>
+            <ul class="categories">
+                <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
+                <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
+                <li><a href="../../index.html#offers">Offers</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            <div class="icons">
+                <a href="/src/search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- search -->
+                <a href="/src/loginReg/loginReg.html" id="loginRegProfileIcon"><i
+                        class="fa-regular fa-user"></i></a> <!-- user -->
+                <a href="#"><i class="fa-regular fa-star"></i></a> <!-- fav -->
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> <!-- cart -->
 
-        <h1>
-            Search Page
-        </h1>
+            </div>
+          
+
+        </div>
+
+       <div class="parent">
+        <div class="products">
+            <input type="search" id="search">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        </div>
+        <div id="product"></div>
+       </div>
+       <footer>
+        <div class="footer">
+            <div class="help">
+                <h3>Grand cafee help</h3>
+                <ul class="list">
+                    <li><a href="">search</a></li>
+                    <li><a href="">about us </a></li>
+                    <li><a href=""> contact us</a></li>
+                    <li><a href="">track your order</a></li>
+                    <li><a href="">privacy policy </a></li>
+                    <li><a href="">terms of servicies</a></li>
+                </ul>
+            </div>
+            <div class="shop">
+                <h3>Grand Shop</h3>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/src/categories/coffee/coffee.html">Coffe </a></li>
+                    <li><a href="/src/categories/hot_choclat/hot.html"> Hot Choclate</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#offers">Offers </a></li>
+                </ul>
+
+            </div>
+            <div class="Contact">
+                <h3>Contact Us</h3>
+                <ul class="list">
+                    <li><i class="fa-solid fa-phone"></i><span>01043784319</span></li>
+                    <li><i class="fa-solid fa-envelope"></i><span>grandcaffe@gmail.com</span></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                    <li><a href="#"> <i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <span>copyRight &COPY; Grand Caffe @ 2023</span>
+    </footer>
+
+
+        <script src="search.js"></script>
 
     </body>
 
