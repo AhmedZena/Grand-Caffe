@@ -1,4 +1,4 @@
-# Grand Coffee System
+# Grand Caffe System
 
 ## Overview
 This document outlines the features and functionalities of a comprehensive coffee shop system, including a detailed user interface for product browsing, checkout, and user profile management.
