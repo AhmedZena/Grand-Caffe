@@ -9,13 +9,14 @@ This document outlines the features and functionalities of a comprehensive coffe
 ## Flow Chart of Grand Coffee
 ![Flowchart of Grand Coffee System](assets/docs/flow-chart.jpg)
 
-## sequence diagram illustrating a simple guide for users on how to navigate and use your website:
+## Sequence diagram 
+illustrating a simple guide for users on how to navigate and use your website:
 ![use case](assets/docs/use-case.jpg)
 
 
 
 
-### Key Features on landing page 
+### Key Features on the Home page 
 - **Ads Slider:** Displays current promotions and ads.
 - **Coffee Selections:** Dedicated sections for various coffee products, including 'Coffee to Go' and 'Hot Chocolate'.
 - **Customer Reviews:** Section for displaying customer feedback.
@@ -29,12 +30,12 @@ This document outlines the features and functionalities of a comprehensive coffe
 
 ### Checkout Process
 - **Sign-In:** Mandatory sign-in to access the checkout area.
-- **Balance Verification:** System checks the user's balance before finalizing the purchase.
+- **Balance Verification:** The System checks the user's balance before finalizing the purchase.
 - **Transaction Recording:** Purchase details are saved in local storage.
 
 ### User Profiles
 - **Profile Details:** Includes user's name, email, age, and country.
-- **Customization:** Users can change their name, age, and country, balance, profile picture and background image 
+- **Customization:** Users can change their name, age, country, balance, profile picture, and background image 
 - **Management:** Functionalities for logging out and account deletion.
 
 ## Administration
@@ -54,7 +55,7 @@ To view the admin dashboard in the Grand Coffee System, you can manually set you
 
 1. Open the web application in your browser.
 2. Use your browser's developer tools to access the local storage (usually found under the Application tab).
-3. Modify the `userRole` key (or similar) to the value `admin`.
+3. Modify the `role` key to the value `admin`.
 4. Refresh the page, and you should see an admin icon in the navbar, allowing access to the admin dashboard.
 
 This is intended for development and testing purposes only.
