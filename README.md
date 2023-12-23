@@ -60,7 +60,7 @@ To view the admin dashboard in the Grand Coffee System, you can manually set you
 This is intended for development and testing purposes only.
 
 ### The Dashboard
-![dashboard](assets/docs/admin-dashboard.jpg)
+![dashboard](assets/docs/admin-dashboard.png)
 
 
 ## Technical Aspects
