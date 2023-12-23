@@ -3,8 +3,7 @@
 ## Overview
 This document outlines the features and functionalities of a comprehensive coffee shop system, including a detailed user interface for product browsing, checkout, and user profile management.
 
-## Demo: 
-[https://grand-caffe.vercel.app](https://grand-caffe.vercel.app/)
+### Demo: [https://grand-caffe.vercel.app](https://grand-caffe.vercel.app/)
 
 
 ## Flow Chart of Grand Coffee
@@ -46,6 +45,23 @@ This document outlines the features and functionalities of a comprehensive coffe
 - **Team Information:** 'About Us' page with detailed team information.
 - **Product Search:** Enables users to search for specific coffee products.
 - **Contact us:** Enables users to send any messages to us.
+
+
+## Tips for Developers
+
+### Accessing the Admin Dashboard
+To view the admin dashboard in the Grand Coffee System, you can manually set your user role to 'admin' in the local storage. Here's how:
+
+1. Open the web application in your browser.
+2. Use your browser's developer tools to access the local storage (usually found under the Application tab).
+3. Modify the `userRole` key (or similar) to the value `admin`.
+4. Refresh the page, and you should see an admin icon in the navbar, allowing access to the admin dashboard.
+
+This is intended for development and testing purposes only.
+
+### The Dashboard
+![dashboard](assets/docs/admin-dashboard.jpg)
+
 
 ## Technical Aspects
 ### HTML
