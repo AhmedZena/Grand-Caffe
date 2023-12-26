@@ -716,6 +716,13 @@ body {
   .logo {
     width: 70px;
   }
+  .roasting-container {
+    padding: 5px 0;
+  }
+
+  .roasting {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 490px) {
@@ -803,5 +810,11 @@ body {
 
   .container {
     padding: 20px;
+  }
+  .roasting-container {
+    padding: 0;
+  }
+  .roasting {
+    font-size: 0.8rem;
   }
 }

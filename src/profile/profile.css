@@ -431,3 +431,98 @@ a {
   font-weight: bold;
   color: #8899a6;
 }
+
+@media screen and (max-width: 768px) {
+  .content-profile-page {
+    width: 100%;
+  }
+  .profile-bgHome {
+    width: 100%;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
+  .user-profile-data {
+    padding: 0;
+  }
+  .user-profile-data h1 {
+    font-size: 1.5em;
+  }
+  .user-profile-data p {
+    font-size: 1em;
+  }
+  .user-balance {
+    padding: 0;
+  }
+  .user-balance p {
+    font-size: 1em;
+  }
+  .user-balance-span {
+    font-size: 1em;
+  }
+  .edit-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .edit-buttons button {
+    /* width: 20%; */
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+  .edit-profile,
+  .edit-userBalance,
+  .edit-moreInfo,
+  .change-password {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .user-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .user-info label {
+    width: 100%;
+    text-align: left;
+  }
+  .user-info input {
+    width: 100%;
+  }
+  .user-info input[type="submit"] {
+    width: 100%;
+  }
+  .user-product {
+    width: 100%;
+  }
+  .user-product-img {
+    width: 100px;
+    height: 100px;
+  }
+  .user-product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .user-product-info-quantity {
+    padding: 0;
+  }
+  .user-product-info h3 {
+    font-size: 1.5em;
+  }
+  .user-product-info p {
+    font-size: 1em;
+  }
+  .user-product-info p span {
+    font-size: 0.8em;
+  }
+  .btns-logOut-removeAccount {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 100px;
+  }
+}
