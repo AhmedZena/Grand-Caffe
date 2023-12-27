@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="loginReg.css">
         <link rel="stylesheet" href="../../assets/sharedStyles/styles.css">
-        
+
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
         <title>Login And Register</title>
-       
-        
+
+
         <style>
 
         </style>
@@ -21,7 +21,7 @@
     <body>
         <div class="nav">
             <div class="header">
-               <a href="../../index.html" class="logo"> <img src="/assets/pics/home/logo.jpg" alt="" class="logo"></a>
+                <a href="../../index.html" class="logo"> <img src="/assets/pics/home/logo.jpg" alt="" class="logo"></a>
                 <h1>Grand Caffe</h1>
             </div>
             <ul class="categories">
@@ -33,121 +33,121 @@
             </ul>
             <div class="icons">
                 <a href="/src/search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- search -->
-                <a href="/src/loginReg/loginReg.html" id="loginRegProfileIcon"><i
-                        class="fa-regular fa-user"></i></a> <!-- user -->
+                <!-- <a href="/src/loginReg/loginReg.html" id="loginRegProfileIcon"><i class="fa-regular fa-user"></i></a> -->
+                <!-- user -->
 
             </div>
-          
+
 
         </div>
 
 
-<div class="parent">
-        <div class="container" id="container">
-            <div class="form-container sign-up-container">
-                <form action="#" onsubmit="register(event)">
-                    <h1>Create Account</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>or use your email for registration</span>
-                    <input type="text" placeholder="Name" id="registerName" name="name" />
-                    <input type="email" placeholder="Email" id="registerEmail" name="email" />
-                    <input type="password" placeholder="Password" id="registerPassword" />
-                    <p class="passwordError">
-                        Password must be at least 8 characters, at least 1 uppercase letter, at least 1 lowercase
-                        letter, at least 1 number
-                    </p>
-                    <button>Register</button>
-                </form>
-            </div>
-            <div class="form-container sign-in-container">
-                <form action="#" onsubmit="login(event)">
-                    <h1>Sign in</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>or use your account</span>
-                    <input type="email" placeholder="Email" id="loginEmail" />
-                    <input type="password" placeholder="Password" id="loginPassword" />
-                    <p class="passwordError">
-                        Password must be at least 8 characters, at least 1 uppercase letter, at least 1 lowercase
-                        letter, at least 1 number
-                    </p>
-                    <a class="forgotPassword" onclick="forgotPassword()">Forgot your password?
+        <div class="parent">
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    <form action="#" onsubmit="register(event)">
+                        <h1>Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input type="text" placeholder="Name" id="registerName" name="name" />
+                        <input type="email" placeholder="Email" id="registerEmail" name="email" />
+                        <input type="password" placeholder="Password" id="registerPassword" />
+                        <p class="passwordError">
+                            Password must be at least 8 characters, at least 1 uppercase letter, at least 1 lowercase
+                            letter, at least 1 number
+                        </p>
+                        <button>Register</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#" onsubmit="login(event)">
+                        <h1>Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input type="email" placeholder="Email" id="loginEmail" />
+                        <input type="password" placeholder="Password" id="loginPassword" />
+                        <p class="passwordError">
+                            Password must be at least 8 characters, at least 1 uppercase letter, at least 1 lowercase
+                            letter, at least 1 number
+                        </p>
+                        <a class="forgotPassword" onclick="forgotPassword()">Forgot your password?
 
-                        <span id="forgotPasswordResult"></span>
-                    </a>
+                            <span id="forgotPasswordResult"></span>
+                        </a>
 
-                    <button>Sign In</button>
-                </form>
-            </div>
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Welcome Back!</h1>
-                        <p>To keep connected with us please login with your personal info</p>
-                        <button class="ghost" id="signIn">Sign In</button>
-                    </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Hello, Friend!</h1>
-                        <p>Enter your personal details and start journey with us</p>
-                        <button class="ghost" id="signUp">Register</button>
+                        <button>Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="ghost" id="signUp">Register</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="help">
-                <h3>Grand cafee help</h3>
-                <ul class="list">
-                    <li><a href="../search/search.html">search</a></li>
-                    <li><a href="../about/about.html">about us </a></li>
-                    <li><a href=""> contact us</a></li>
-                    <li><a href="">track your order</a></li>
-                    <li><a href="">privacy policy </a></li>
-                    <li><a href="">terms of servicies</a></li>
-                </ul>
-            </div>
-            <div class="shop">
-                <h3>Grand Shop</h3>
-                <ul class="list">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
-                    <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
-                    <li><a href="../../index.html#offers">Offers</a></li>
-                    <li><a href="../../src/about/about.html">About</a></li>
-                </ul>
+        <footer>
+            <div class="footer">
+                <div class="help">
+                    <h3>Grand cafee help</h3>
+                    <ul class="list">
+                        <li><a href="../search/search.html">search</a></li>
+                        <li><a href="../about/about.html">about us </a></li>
+                        <li><a href=""> contact us</a></li>
+                        <li><a href="">track your order</a></li>
+                        <li><a href="">privacy policy </a></li>
+                        <li><a href="">terms of servicies</a></li>
+                    </ul>
+                </div>
+                <div class="shop">
+                    <h3>Grand Shop</h3>
+                    <ul class="list">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
+                        <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
+                        <li><a href="../../index.html#offers">Offers</a></li>
+                        <li><a href="../../src/about/about.html">About</a></li>
+                    </ul>
 
+                </div>
+                <div class="Contact">
+                    <h3>Contact Us</h3>
+                    <ul class="list">
+                        <li><i class="fa-solid fa-phone"></i><span>01043784319</span></li>
+                        <li><i class="fa-solid fa-envelope"></i><span>grandcaffe@gmail.com</span></li>
+                    </ul>
+                    <ul class="icons">
+                        <li><a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                        <li><a href="#"> <i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="Contact">
-                <h3>Contact Us</h3>
-                <ul class="list">
-                    <li><i class="fa-solid fa-phone"></i><span>01043784319</span></li>
-                    <li><i class="fa-solid fa-envelope"></i><span>grandcaffe@gmail.com</span></li>
-                </ul>
-                <ul class="icons">
-                    <li><a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
-                    <li><a href="#"> <i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <span>copyRight &COPY; Grand Caffe @ 2023</span>
-    </footer>
+            <span>copyRight &COPY; Grand Caffe @ 2023</span>
+        </footer>
 
 
         <script src="loginReg.js"></script>
-<script src="../../assets/sharedScript/main.js"></script>
+        <script src="../../assets/sharedScript/main.js"></script>
     </body>
 
 </html>

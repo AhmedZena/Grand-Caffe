@@ -10,30 +10,28 @@
         <link rel="stylesheet" href="profile.css">
         <link rel="stylesheet" href="../../assets/sharedStyles/styles.css">
 
-        <style>
 
-        </style>
     </head>
 
     <body>
         <div class="nav">
             <div class="header">
-                <img src="/assets/pics/home/logo.jpg" alt="" class="logo">
+                <a class="logo" href="../../../index.html"><img src="/assets/pics/home/logo.jpg" alt=""
+                        class="logo"></a>
                 <h1>Grand Caffe</h1>
             </div>
             <ul class="categories">
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="/src/categories/coffee/coffee.html">Coffe</a></li>
                 <li><a href="/src/categories/hot_choclat/hot.html">Hot Choclate</a></li>
-                <li><a href="../../index.html#offers">Offers</a></li>
-                <li><a href="../about/about.html">About</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="../../src/about/about.html">About</a></li>
             </ul>
-            <div class=" icons">
-                <a href="/src/search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <!-- search -->
+            <div class="icons">
+                <a href="/src/search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- search -->
                 <a href="/src/loginReg/loginReg.html" id="loginRegProfileIcon"><i class="fa-regular fa-user"></i></a>
                 <!-- user -->
-                <a href="./src/admin/dashboard.html" class=" admin"><i class="fas fa-user-cog "></i></a>
+                <a href="../../src/admin/dashboard.html" class="admin"><i class="fas fa-user-cog "></i></a>
                 <!-- cart -->
                 <a href="#" onclick="getData()"><i class="fa-solid fa-cart-shopping"></i></a> <!-- cart -->
 
@@ -41,7 +39,6 @@
 
 
         </div>
-
 
         <div class="content-profile-page">
             <div class="profile-user-page card">
@@ -251,8 +248,9 @@
         </footer>
 
 
+        <script src="../../assets/sharedScript/main.js"></script>
         <script src="profile.js"></script>
-        <script src="../side/side.js"></script>
+        <!-- <script src="../side/side.js"></script> -->
     </body>
 
 

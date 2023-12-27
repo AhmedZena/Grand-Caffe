@@ -213,3 +213,153 @@ table thead tr {
   color: #fff;
   transition: 0.5rem;
 }
+    .popup {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .popup-content {
+                width: 300px;
+                height: 200px;
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .popup-content h2 {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .popup-content button {
+                width: 100px;
+                height: 40px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .popup-content button:hover {
+                background-color: white;
+                color: red;
+            }
+
+
+
+            .popup-content button:last-child {
+                background-color: blue
+            }
+
+            .popup-content button:last-child:hover {
+                background-color: white;
+                color: blue;
+            }
+
+
+
+            .popup-edit {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .popup-content-edit {
+                width: 300px;
+                height: 500px;
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .popup-content-edit h2 {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .popup-content-edit form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .popup-content-edit form label {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .popup-content-edit form input,
+            .popup-content-edit form select {
+                width: 100%;
+                height: 40px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+                padding: 0 10px;
+                margin-bottom: 20px;
+            }
+
+            .popup-content-edit form button {
+                width: 100px;
+                height: 40px;
+                border: none;
+                outline: none;
+                background-color: blue;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .popup-content-edit form button:hover {
+                background-color: white;
+                color: blue;
+            }
+
+            .popup-content-edit form button:last-child {
+                background-color: red;
+            }
+
+            .popup-content-edit form button:last-child:hover {
+                background-color: white;
+                color: red;
+            }
+
+            #userName,
+            #userEmail {
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 20px;
+                color: green;
+            }
