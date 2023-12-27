@@ -8,7 +8,7 @@
     
  }
 .products{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -34,6 +34,12 @@
     grid-template-columns: repeat(4,200px);
     justify-content: center;
     gap: 20px;
+}
+@media screen and (max-width:667px) {
+    #product{
+        grid-template-columns: repeat(1,200px);
+    }
+    
 }
 .search-item{
     width: 200px;
