@@ -201,3 +201,51 @@ hr {
   /* gap: 10px; */
   margin: 0 10px;
 }
+
+/* media query */
+
+@media (max-width: 768px) {
+  .shoppingHeader {
+    font-size: 1.4em !important;
+  }
+  .shopping {
+    width: 70% !important;
+    height: 100vh;
+    left: -100vw !important;
+  }
+
+  .openSide {
+    transform: translateX(100vw) !important;
+    transition: 2s ease-in;
+  }
+
+  #close {
+    width: 30px !important;
+    height: 30px !important;
+    right: 2px !important;
+  }
+
+  .imageCard {
+    width: 40%;
+  }
+  .details {
+    margin-left: 10vw;
+  }
+
+  .plus,
+  .mins {
+    font-size: 0.8em;
+  }
+
+  .namePro {
+    font-size: 0.8em;
+  }
+
+  .pricePro,
+  .sizee {
+    /* margin: 9% 0;
+    padding-top: 10% 0;
+    font-size: 0.8em; */
+    margin-left: 40px !important;
+  }
+}

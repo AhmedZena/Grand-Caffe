@@ -718,9 +718,38 @@ body {
   }
   .roasting-container {
     padding: 5px 0;
+    width: 100%;
   }
 
+  .roastings {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10px;
+  }
   .roasting {
+    font-size: 0.9rem;
+    /* width: 50px; */
+    width: 80%;
+    padding: 2px;
+  }
+
+  .reviews {
+  }
+
+  .review {
+    font-size: 0.9rem;
+    /* width: 50px; */
+    width: 40%;
+    padding: 2px;
+  }
+
+  .review-name {
+    font-size: 1.2rem;
+  }
+
+  .review-text {
     font-size: 0.9rem;
   }
 }
@@ -757,7 +786,8 @@ body {
   }
 
   .price h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-left: 2px;
   }
 
   .price i {
@@ -811,10 +841,8 @@ body {
   .container {
     padding: 20px;
   }
-  .roasting-container {
-    padding: 0;
-  }
-  .roasting {
+
+  /* .roasting {
     font-size: 0.8rem;
-  }
+  } */
 }

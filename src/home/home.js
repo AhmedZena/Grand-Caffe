@@ -149,13 +149,24 @@ xhr5.addEventListener("load", function () {
     for (let i = 0; i < 4; i++) {
       console.log(coffes[i].images);
       coffeContainer.innerHTML += `
-      <div class="coffe-card">
+      <div class="coffe-card" id=${coffes[i].id}>
      <img src=${coffes[i].images} />
       <h3>${coffes[i].name}</h3>
       <span class="price">price $ ${coffes[i].price} </span>
       </div>
       `;
     }
+  }
+});
+
+//  when click in any product it save the id in local storage
+coffeContainer.addEventListener("click", (e) => {
+  const productCard = e.target.closest(".coffe-card");
+  if (productCard) {
+    const productId = productCard.id;
+    localStorage.setItem("coffeeTypeId", productId);
+    // in same page
+    window.open("../src/product/product.html", "_self");
   }
 });
 

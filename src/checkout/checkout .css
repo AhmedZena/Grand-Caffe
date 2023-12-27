@@ -319,3 +319,43 @@ hr {
   gap: 10px;
   margin: 0 10px;
 }
+
+/* responsive */
+@media (max-width: 667px) {
+  .head {
+    font-size: 20px;
+  }
+  .fa-shopping-cart {
+    font-size: 20px;
+  }
+  .details {
+    font-size: 15px;
+  }
+  .namePro {
+    font-size: 0.7em;
+  }
+
+  .pricePro {
+    font-size: 0.5em;
+    margin: 0;
+  }
+
+  .sizee {
+    font-size: 0.4em;
+  }
+
+  .plus,
+  .mins {
+    font-size: 0.8em;
+    width: 20px;
+    height: 20px;
+  }
+
+  .count {
+    font-size: 0.7em;
+  }
+
+  .remove {
+    font-size: 0.7em;
+  }
+}
